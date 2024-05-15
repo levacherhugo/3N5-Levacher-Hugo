@@ -77,7 +77,7 @@ TODO utiliser ChatGPT pour traduire de C# à kotlin.
 
 ### Exercice Bonjour Kotlin
 
-Tu dois créer un projet Kotlin au format gradle dont le nom de package de base est **org.nomdefamille** en changeant le nom de famille.
+Tu dois créer un projet Kotlin au format gradle dont le nom de package de base (*GroupId*) est **org.nomdefamille** en changeant le nom de famille.
 
 Créer 2 classes exécutables (avec un main qui suit la convention Kotlin). La première s'appelle **NomDeFamille.kt** et affiche "Bonjour Nom de famille" à l'exécution.
 
