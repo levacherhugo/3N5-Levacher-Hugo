@@ -79,8 +79,8 @@ TODO utiliser ChatGPT pour traduire de C# à kotlin.
 
 Tu dois créer un projet Kotlin au format gradle dont le nom de package de base (*GroupId*) est **org.nomdefamille** en changeant le nom de famille.
 
-Crée 2 classes exécutables (avec un main qui suit la convention Kotlin).
-La première s'appelle **NomDeFamille.kt** et affiche "Bonjour Nom de famille" à l'exécution.
+Crée 2 classes exécutables (avec un main qui suit la convention Kotlin).\
+La première s'appelle **NomDeFamille.kt** et affiche "Bonjour Nom de famille" à l'exécution.\
 La deuxième s'appelle **PrenomDuProf.kt** et affiche "Salut prénom du prof" à l'exécution.
 
 N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L'EXERCICE, PUIS DE FAIRE UN PUSH.
