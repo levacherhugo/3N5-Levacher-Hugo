@@ -152,7 +152,7 @@ Valide que les valeurs que tu trouves sont les mêmes que pour TraceManuelle
 
 Tu dois créer un projet Kotlin au format gradle dont le nom est DemoJSoup.
 
-Tu dois inclure JSoup dans les dépendances de ton projet dans le pom.xml.
+Tu dois inclure JSoup dans les dépendances de ton projet dans le build.gradle.
 
 Tu dois créer une classe exécutable appelée **SuperDuperDemo.kt**. 
 
