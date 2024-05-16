@@ -13,12 +13,12 @@ Dans un navigateur:
   - prendre une version stable (pas une alpha, beta, RC, etc.)
 - cliquer sur le numero de version désiré
 - on arrive sur une page avec plusieurs onglets en bas: **Maven**, **Gradle** etc.
-- dans notre cas, on va choisir **Gradle** pour avoir le code à ajouter dans le fichier `build.gradle`
+- dans notre cas, on va choisir **Gradle (Kotlin)** pour avoir le code à ajouter dans le fichier `build.gradle`
 - faire un CTRL+C pour copier la ligne qui commence par `implementation ...`
 
 ## Etape 2 : Ajouter la librairie dans le fichier `build.gradle`
 
-- ouvrir le projet dans ton environnement de développement (IntelliJ, Android Studio, etc.).
+- ouvrir le projet dans l'environnement de développement (IntelliJ, Android Studio, etc.).
 - ouvrir le fichier build.gradle, s'il y en a plusieurs ouvrir celui qui contient des lignes `implementation ...`
 - coller la ligne copiée à l'étape 1 dans la section `dependencies` du fichier `build.gradle` avec les autres lignes `implementation ...`
 - à ce stage, il faut que le projet recharge le build.gradle ce qui va télécharger la librairie et rendre les classes disponibles:
