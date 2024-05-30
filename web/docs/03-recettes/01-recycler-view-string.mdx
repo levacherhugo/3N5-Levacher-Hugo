@@ -55,23 +55,12 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
     Voici un exemple de fichier `mon_item.xml` si on souhaite afficher une `String` dans un `TextView` :
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp">
-
-        <TextView
-            android:id="@+id/tvElement"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Salut Salut!"
-            android:textSize="24sp" />
-    </LinearLayout>
-    ```
+    <GHCode
+      language="xml"
+      user="departement-info-cem"
+      repo="3N5-Prog3"
+      filePath="code/RecetteRecyclerViewString/app/src/main/res/layout/mon_item.xml"
+     />
 
   </TabItem>
   <TabItem value="MonAdapter.kt" label="MonAdapter.kt">
@@ -90,19 +79,14 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
       Cette classe est appelée un **[ViewHolder](https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder)**.
       Cette classe ressemble en quelque sorte à une classe d'**Activité**.
 
-      ```kotlin
-      class MonAdapter {
-
-        // binding nous permet d'accéder à tous les champs de notre layout mon_item.xml
-        inner class MonItemViewHolder(private val binding: MonItemBinding) : RecyclerView.ViewHolder(binding.root) {
-            // Cette méthode est appelée pour mettre à jour le contenu de l'élément
-            // Lorsqu'on voudra réagir à un clic sur un élément, on ajoutera un OnClickListener ici
-            fun bind(item: String) {
-                binding.tvElement.text = item // On affiche l'élément dans le TextView
-            }
-        }
-      }
-      ```
+    <GHCode
+      language="kotlin"
+      user="departement-info-cem"
+      repo="3N5-Prog3"
+      filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
+      startLine="13"
+      endLine="17"
+     />
     </details>
 
     <details>
@@ -112,21 +96,14 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       Nous vous recommandons de définir cet objet dans le même fichier que votre `Adapter`, mais à l'extérieur de la classe `MonItemAdapter`.
 
-      ```kotlin
-      class MonItemAdapter {
-          // ...
-      }
+    <GHCode
+      language="kotlin"
+      user="departement-info-cem"
+      repo="3N5-Prog3"
+      filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
+      startLine="31"
+     />
 
-      object MonItemDiffCallback : DiffUtil.ItemCallback<String>() {
-          override fun areItemsTheSame(oldItem: String, newItem: String): Boolean {
-              return oldItem == newItem
-          }
-
-          override fun areContentsTheSame(oldItem: String, newItem: String): Boolean {
-              return oldItem == newItem
-          }
-      }
-      ```
     </details>
 
     <details>
@@ -136,11 +113,14 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       La classe a besoin du **ViewHolder** et du **DiffCallback** que vous avez défini précédemment.
 
-      ```kotlin
-      class MonAdapter : ListAdapter<String, MonAdapter.MonItemViewHolder>(MonItemDiffCallback) {
-          // ...
-      }
-      ```
+    <GHCode
+      language="kotlin"
+      user="departement-info-cem"
+      repo="3N5-Prog3"
+      filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
+      startLine="10"
+      endLine="10"
+     />
 
       À ce point ci, votre environnement de développement devrait vous indiquer des erreurs.
       C'est normal, car vous n'avez pas encore implémenté les méthodes requises par la classe ListAdapter.
@@ -156,12 +136,14 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       La méthode `onCreateViewHolder` est appelée lorsqu'un nouvel élément de la liste doit être affiché.
 
-      ```kotlin
-      override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MonItemViewHolder {
-        val binding: MonItemBinding = MonItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return MonItemViewHolder(binding)
-      }
-      ```
+      <GHCode
+        language="kotlin"
+        user="departement-info-cem"
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
+        startLine="19"
+        endLine="22"
+      />
     </details>
 
     <details>
@@ -169,11 +151,14 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       La méthode `onBindViewHolder` est appelée lorsqu'un élément de la liste doit être mis à jour.
 
-      ```kotlin
-      override fun onBindViewHolder(holder: MonItemViewHolder, position: Int) {
-        holder.bind(getItem(position))
-      }
-      ```
+      <GHCode
+        language="kotlin"
+        user="departement-info-cem"
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
+        startLine="24"
+        endLine="27"
+      />
     </details>
 
     <details>
@@ -181,40 +166,13 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       Votre fichier MonAdapter.kt devrait maintenant ressembler à ceci :
 
-      ```kotlin
-      class MonAdapter : ListAdapter<String, MonAdapter.MonItemViewHolder>(MonItemDiffCallback) {
-
-        // binding nous permet d'accéder à tous les champs de notre layout mon_item.xml
-        inner class MonItemViewHolder(private val binding: MonItemBinding) : RecyclerView.ViewHolder(binding.root) {
-          // Cette méthode est appelée pour mettre à jour le contenu de l'élément
-          // Lorsqu'on voudra réagir à un clic sur un élément, on ajoutera un OnClickListener ici
-          fun bind(item: String) {
-            binding.tvElement.text = item // On affiche l'élément dans le TextView
-          }
-        }
-
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MonItemViewHolder {
-          val binding: MonItemBinding = MonItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-          return MonItemViewHolder(binding)
-        }
-
-        override fun onBindViewHolder(holder: MonItemViewHolder, position: Int) {
-          val item: String = getItem(position)
-          holder.bind(item)
-        }
-
-      }
-
-      object MonItemDiffCallback : DiffUtil.ItemCallback<String>() {
-        override fun areItemsTheSame(oldItem: String, newItem: String): Boolean {
-          return oldItem == newItem
-        }
-
-        override fun areContentsTheSame(oldItem: String, newItem: String): Boolean {
-          return oldItem == newItem
-        }
-      }
-      ```
+      <GHCode
+        language="kotlin"
+        user="departement-info-cem"
+        repo="3N5-Prog3"
+        startLine="10"
+        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
+      />
     </details>
 
   </TabItem>
@@ -222,25 +180,12 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
     On ajoute le `RecyclerView` dans le fichier `xml` de l'activité.
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_mon_adapter"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:spanCount="1"
-            tools:listitem="@layout/mon_item" />
-    </LinearLayout>
-    ```
+    <GHCode
+      language="xml"
+      user="departement-info-cem"
+      repo="3N5-Prog3"
+      filePath="code/RecetteRecyclerViewString/app/src/main/res/layout/activity_main.xml"
+    />
 
   </TabItem>
   <TabItem value="MainActivity.kt" label="MainActivity.kt">
@@ -269,30 +214,16 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       Créez une méthode pour lier l'`Adapteur` que nous venons de créer au `RecyclerView`.
 
-      ```kotlin
-      class MainActivity : AppCompatActivity() {
+      N'oubliez pas d'appeler cette méthode dans le `onCreate` **APRÈS** avoir mis en place le **ViewBinding**.
 
-        private lateinit var binding: ActivityMainBinding
-        private lateinit var adapter: MonAdapter
-
-        override fun onCreate(savedInstanceState: Bundle?) {
-          // ...
-
-          setupRecycler()
-        }
-
-        private fun setupRecycler() {
-          adapter = MonAdapter() // Créer l'adapteur
-          binding.rvMonAdapter.adapter = adapter // Assigner l'adapteur au RecyclerView
-          binding.rvMonAdapter.setHasFixedSize(true) // Option pour améliorer les performances
-          binding.rvMonAdapter.addItemDecoration( // Ajouter un séparateur entre chaque élément
-              DividerItemDecoration(
-                  binding.rvMonAdapter.context, DividerItemDecoration.VERTICAL
-              )
-          )
-        }
-      }
-      ```
+      <GHCode
+        language="kt"
+        user="departement-info-cem"
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/MainActivity.kt"
+        startLine="23"
+        endLine="32"
+      />
     </details>
 
     <details>
@@ -300,32 +231,14 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       Remplissez le recycler view avec 10 000 éléments.
 
-      ```kotlin
-      class MainActivity : AppCompatActivity() {
-
-        private lateinit var binding: ActivityMainBinding
-        private lateinit var adapter: MonAdapter
-
-        override fun onCreate(savedInstanceState: Bundle?) {
-          super.onCreate(savedInstanceState)
-          binding = ActivityMainBinding.inflate(layoutInflater)
-          setContentView(binding.root)
-
-          setupRecycler()
-          fillRecycler()
-        }
-
-        // ...
-
-        private fun fillRecycler() {
-          val items: MutableList<String> = mutableListOf()
-          for (i in 1..10000) {
-              items.add("Item #$i")
-          }
-          adapter.submitList(items) // Pour changer le contenu de la liste, utiliser submitList de l'adapteur
-        }
-      }
-      ```
+      <GHCode
+        language="kt"
+        user="departement-info-cem"
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/MainActivity.kt"
+        startLine="34"
+        endLine="40"
+      />
 
     </details>
 
