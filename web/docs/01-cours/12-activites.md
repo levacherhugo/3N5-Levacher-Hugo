@@ -57,13 +57,13 @@ Vous travaillerez sur le **[travail 2](../tp/tp2)**.
 
 ### Exercice de navigation
 
-Tu dois implanter une application avec trois activités. Voici la navigation souhaitée :
+Tu dois implémenter une application avec trois activités. Voici la navigation souhaitée :
 
 - Accueil -> Contact ou Article
 - Article -> Contact
 - Contact -> Accueil
 
-Le look n'est **pas** important
+L'apparence n'est **pas** importante.
 
 <Row>
 
