@@ -1,0 +1,34 @@
+---
+hide_table_of_contents: true
+---
+
+# ActionBar - Simple
+
+Cet ActionBar permet d'afficher une barre simple en haut de l'écran. 
+Les options sont assez limitées pour cette barre. Pour plus d'options, veuillez vous référer à TODO inclure le lien vers le action bar complexe.
+
+## Activer l'ActionBar
+
+Par défaut cette barre n'est pas affichée. 
+
+Pour l'activer, il faut :
+
+1. naviguer dans `res/values/themes`, et modifier les 2 fichiers nommés themes.xml.
+2. Effacer tout les endroits où on peut lire `.NoActionBar`. Par exemple, `Theme.Material3.DayNight.NoActionBar` devient `Theme.Material3.DayNight`
+
+## Changer le titre
+
+Une fois que l'ActionBar est activé, il est possible de changer le texte qui s'y affiche.
+
+Dans le `onCreate` de votre activité, faire comme suit :
+
+```kotlin
+class AccueilActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        
+        // Reste du code...
+
+        title = "Accueil"
+    }
+}
+```

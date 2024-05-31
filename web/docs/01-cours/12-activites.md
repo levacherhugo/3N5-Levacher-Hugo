@@ -67,7 +67,8 @@ graph TD;
     Contact-->Accueil;
 ```
 
-L'apparence n'est **pas** importante. Cependant, les boutons doivent être au même endroit que sur les images. Ex : centré, en bas et centré, etc.
+- Les boutons doivent être au même endroit que sur les images. Ex : centré, en bas et centré, etc.
+- Pour afficher un ActionBar simple, vous pouvez vous référer à cette [recette](../03-recettes/action-bar-simple.mdx).
 
 <Row>
 
@@ -91,38 +92,38 @@ L'apparence n'est **pas** importante. Cependant, les boutons doivent être au m�
 
 </Row>
 
-### Exercice de transfert d'informations
+### Exercice Navigation Transfert
 
-Tu dois maintenant rajouter un peu de logique à ton application
+Sur le même projet, tu dois maintenant rajouter un peu de logique à ton application.
 
-- Accueil : Contient un texte disant Bonjour et un Number Picker.
-- Article : Affiche toujours le même texte (lorem ipsum), mais le numéro de l'article dans le titre change en fonction de ce qui a été choisi sur l'activité d'accueil
-- Contact : Contient un texte éditable où on entre son nom
-- Lorsqu'on est sur l'activité Contact et qu'on revient à l'accueil avec le bouton, on doit changer le message pour Bonjour *nom*
+- Accueil : Contient un texte disant Bonjour et un [NumberPicker](https://developer.android.com/reference/kotlin/android/widget/NumberPicker-).
+- Article : Affiche toujours le même texte (lorem ipsum), mais le numéro de l'article dans le titre change en fonction de ce qui a été choisi sur l'activité d'accueil.
+- Contact : Contient un [TextField](https://m3.material.io/components/text-fields/overview) où on entre son nom.
+- Lorsqu'on est sur l'activité Contact et qu'on revient à l'accueil avec le bouton, on doit changer le message pour Bonjour le _nom_. Si le _nom_ est vide, on doit simplement afficher X comme nom.
 
 <Row>
 
 <Column>
 
-![Accueil v2 s1](_12-activites/Accueil_v2_state1.png)
+![Accueil](_12-activites/navigation_transfert_accueil.png)
 
 </Column>
 
 <Column>
 
-![Accueil v2 s2](_12-activites/Accueil_v2_state2.png)
+![Accueil Extra](_12-activites/navigation_transfert_accueil_extra.png)
 
 </Column>
 
 <Column>
 
-![Contact v2](_12-activites/Contact_v2.png)
+![Contact](_12-activites/navigation_transfert_contact.png)
 
 </Column>
 
 <Column>
 
-![Article v2](_12-activites/Article_v2.png)
+![Article](_12-activites/navigation_transfert_article.png)
 
 </Column>
 
@@ -134,7 +135,7 @@ Utilise la documentation en ligne pour apprendre comment appeler un numéro de t
 
 1. Crée une activité avec un bouton
 2. Chaque fois que tu cliques sur le bouton, ouvre automatiquement l'écran pour appeler ton numéro
- 
+
 <Row>
 
 <Column>
@@ -148,7 +149,6 @@ Utilise la documentation en ligne pour apprendre comment appeler un numéro de t
 ![Email after click v1](_12-activites/Email_afterClick.png)
 
 </Column>
-
 
 </Row>
 
