@@ -1,0 +1,24 @@
+---
+hide_table_of_contents: true
+---
+
+# ActionBar
+
+Le action bar est la barre située en haut de l'écran, et permet d'afficher :
+
+- Un menu hamburger
+- Un titre
+- Des boutons et ou menu
+
+## Activer l'ActionBar
+
+Par défaut cette barre n'est pas affichée. 
+
+Pour l'activer, il faut :
+
+1. naviguer dans `res/values/themes`, et modifier les 2 fichiers nommés themes.xml.
+2. Effacer tout les endroits où on peut lire `.NoActionBar`. Par exemple, `Theme.Material3.DayNight.NoActionBar` devient `Theme.Material3.DayNight`
+
+## Changer le titre
+
+Une fois que l'ActionBar est activé, il est possible de changer le texte qui s'y affiche.
