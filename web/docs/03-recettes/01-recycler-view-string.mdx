@@ -6,9 +6,7 @@ hide_table_of_contents: true
 
 Étapes de mise en place d'un `RecyclerView` qui gère une liste de `String` sur un projet existant.
 
-Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/3N5-Prog3/tree/a24-kotlin/code/RecetteRecyclerViewString).
-
-TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-kotlin
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/3N5-Prog3/tree/main/code/RecetteRecyclerViewString).
 
 <Tabs queryString="recette-string">
   <TabItem value="build.gradle.kts" label="build.gradle.kts">
@@ -56,8 +54,6 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
     Voici un exemple de fichier `mon_item.xml` si on souhaite afficher une `String` dans un `TextView` :
 
     <GHCode
-      language="xml"
-      user="departement-info-cem"
       repo="3N5-Prog3"
       filePath="code/RecetteRecyclerViewString/app/src/main/res/layout/mon_item.xml"
      />
@@ -80,12 +76,11 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
       Cette classe ressemble en quelque sorte à une classe d'**Activité**.
 
     <GHCode
-      language="kotlin"
-      user="departement-info-cem"
       repo="3N5-Prog3"
       filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
-      startLine="13"
-      endLine="17"
+      ignore="10:17-10:90,19-28"
+      startLine="10"
+      endLine="29"
      />
     </details>
 
@@ -97,11 +92,10 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
       Nous vous recommandons de définir cet objet dans le même fichier que votre `Adapter`, mais à l'extérieur de la classe `MonItemAdapter`.
 
     <GHCode
-      language="kotlin"
-      user="departement-info-cem"
       repo="3N5-Prog3"
       filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
-      startLine="31"
+      startLine="10"
+      ignore="10:17-10:90,12-28-    // Reste du code..."
      />
 
     </details>
@@ -114,8 +108,6 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
       La classe a besoin du **ViewHolder** et du **DiffCallback** que vous avez défini précédemment.
 
     <GHCode
-      language="kotlin"
-      user="departement-info-cem"
       repo="3N5-Prog3"
       filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
       startLine="10"
@@ -137,8 +129,6 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
       La méthode `onCreateViewHolder` est appelée lorsqu'un nouvel élément de la liste doit être affiché.
 
       <GHCode
-        language="kotlin"
-        user="departement-info-cem"
         repo="3N5-Prog3"
         filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
         startLine="19"
@@ -152,8 +142,6 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
       La méthode `onBindViewHolder` est appelée lorsqu'un élément de la liste doit être mis à jour.
 
       <GHCode
-        language="kotlin"
-        user="departement-info-cem"
         repo="3N5-Prog3"
         filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
         startLine="24"
@@ -167,8 +155,6 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
       Votre fichier MonAdapter.kt devrait maintenant ressembler à ceci :
 
       <GHCode
-        language="kotlin"
-        user="departement-info-cem"
         repo="3N5-Prog3"
         startLine="10"
         filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/adapter/MonAdapter.kt"
@@ -181,8 +167,6 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
     On ajoute le `RecyclerView` dans le fichier `xml` de l'activité.
 
     <GHCode
-      language="xml"
-      user="departement-info-cem"
       repo="3N5-Prog3"
       filePath="code/RecetteRecyclerViewString/app/src/main/res/layout/activity_main.xml"
     />
@@ -195,18 +179,12 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       Commencez par mettre en place le ViewBinding dans votre activité.
 
-      ```kotlin
-      class MainActivity : AppCompatActivity() {
-
-        private lateinit var binding: ActivityMainBinding
-
-        override fun onCreate(savedInstanceState: Bundle?) {
-          super.onCreate(savedInstanceState)
-          binding = ActivityMainBinding.inflate(layoutInflater)
-          setContentView(binding.root)
-        }
-      }
-      ```
+      <GHCode
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/MainActivity.kt"
+        startLine="9"
+        ignore="12-12,18-20,22-40"
+      />
     </details>
 
     <details>
@@ -217,12 +195,10 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
       N'oubliez pas d'appeler cette méthode dans le `onCreate` **APRÈS** avoir mis en place le **ViewBinding**.
 
       <GHCode
-        language="kt"
-        user="departement-info-cem"
         repo="3N5-Prog3"
         filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/MainActivity.kt"
-        startLine="23"
-        endLine="32"
+        startLine="9"
+        ignore="15-17-        // Reste du code...,20-20,33-40"
       />
     </details>
 
@@ -232,12 +208,10 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
       Remplissez le recycler view avec 10 000 éléments.
 
       <GHCode
-        language="kt"
-        user="departement-info-cem"
         repo="3N5-Prog3"
         filePath="code/RecetteRecyclerViewString/app/src/main/java/org/depinfo/recetterecyclerview/MainActivity.kt"
-        startLine="34"
-        endLine="40"
+        startLine="9"
+        ignore="15-17-        // Reste du code...,23-32-    // Reste du code..."
       />
 
     </details>
