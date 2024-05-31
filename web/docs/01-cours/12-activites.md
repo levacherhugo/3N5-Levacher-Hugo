@@ -19,14 +19,6 @@ Démo d'un startActivity.
 - Regarder les vidéos
 - Commencer les exercices . Arrête quand tu as complété tes 2 heures.
 
-:::
-
-</Column>
-
-<Column>
-
-:::tip Vidéos
-
 <Video url="https://youtu.be/MOF0kb0ampc" />
 
 <Video url="https://youtu.be/t4jYehSpR1A" />
@@ -129,24 +121,24 @@ Sur le même projet, tu dois maintenant rajouter un peu de logique à ton applic
 
 </Row>
 
-### (OPTIONNEL) Exercice d'exploration
+### (OPTIONNEL) Exercice ET-Telephone-Maison
 
-Utilise la documentation en ligne pour apprendre comment appeler un numéro de téléphone en utilisant un intent
+Utilise la documentation en ligne pour apprendre comment appeler un numéro de téléphone en utilisant un Intent.
 
-1. Crée une activité avec un bouton
-2. Chaque fois que tu cliques sur le bouton, ouvre automatiquement l'écran pour appeler ton numéro
+1. Crée une activité avec un bouton.
+2. Chaque fois que tu cliques sur le bouton, ouvre automatiquement l'écran pour appeler ton numéro.
 
 <Row>
 
 <Column>
 
-![Email v1](_12-activites/Email_v1.png)
+![Bouton](_12-activites/itty_telephone_maison_bouton.png)
 
 </Column>
 
 <Column>
 
-![Email after click v1](_12-activites/Email_afterClick.png)
+![Téléphone](_12-activites/itty_telephone_maison_telephone.png)
 
 </Column>
 
