@@ -63,25 +63,25 @@ Tu dois implémenter une application avec trois activités. Voici la navigation 
 - Article -> Contact
 - Contact -> Accueil
 
-L'apparence n'est **pas** importante.
+L'apparence n'est **pas** importante, mais les boutons doivent être au même endroit que sur les images. Ex : centré, en bas et centré, etc.
 
 <Row>
 
 <Column>
 
-![Accueil v1](_12-activites/Accueil_v1.png)
+![Accueil](_12-activites/navigation_accueil.png)
 
 </Column>
 
 <Column>
 
-![Article v1](_12-activites/Article_v1.png)
+![Article](_12-activites/navigation_article.png)
 
 </Column>
 
 <Column>
 
-![Contact v1](_12-activites/Contact_v1.png)
+![Contact](_12-activites/navigation_contact.png)
 
 </Column>
 
