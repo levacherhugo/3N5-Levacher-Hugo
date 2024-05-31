@@ -6,10 +6,6 @@ hide_table_of_contents: true
 
 # Multiples activités et navigation
 
-## Contenu
-
-Démo d'un startActivity.
-
 <Row>
 
 <Column>
@@ -17,15 +13,28 @@ Démo d'un startActivity.
 :::danger Avant la séance (2h)
 
 - Regarder les vidéos
+- Regarder rapidement la recette pour afficher un [ActionBar simple](../03-recettes/action-bar-simple.mdx).
 - Commencer les exercices . Arrête quand tu as complété tes 2 heures.
+
+<Row>
+
+<Column>
 
 <Video url="https://youtu.be/MOF0kb0ampc" />
 
 <Video url="https://youtu.be/t4jYehSpR1A" />
 
+</Column>
+
+<Column>
+
 <Video url="https://youtu.be/qvty1jwEj-4" />
 
 <Video url="https://youtu.be/Zu2pd6vOxMM" />
+
+</Column>
+
+</Row>
 
 :::
 
@@ -35,9 +44,9 @@ Démo d'un startActivity.
 
 :::info À faire pendant la séance
 
-Vous devez compléter les exercices de la semaine.
-
-Vous travaillerez sur le **[travail 2](../tp/tp2)**.
+- Démo d'un `startActivity`.
+- Vous devez compléter les exercices de la semaine.
+- Vous travaillerez sur le **[travail 2](../tp/tp2)**.
 
 :::
 
@@ -48,6 +57,10 @@ Vous travaillerez sur le **[travail 2](../tp/tp2)**.
 :::note Exercices
 
 ### Exercice Navigation
+
+<Row>
+
+<Column>
 
 Tu dois implémenter une application avec trois activités. Voici la navigation souhaitée :
 
@@ -62,7 +75,7 @@ graph TD;
 - Les boutons doivent être au même endroit que sur les images. Ex : centré, en bas et centré, etc.
 - Pour afficher un ActionBar simple, vous pouvez vous référer à cette [recette](../03-recettes/action-bar-simple.mdx).
 
-<Row>
+</Column>
 
 <Column>
 
@@ -121,14 +134,18 @@ Sur le même projet, tu dois maintenant rajouter un peu de logique à ton applic
 
 </Row>
 
-### (OPTIONNEL) Exercice ET-Telephone-Maison
+### (OPTIONNEL) Exercice E.T Téléphone Maison 
+
+<Row>
+
+<Column>
 
 Utilise la documentation en ligne pour apprendre comment appeler un numéro de téléphone en utilisant un Intent.
 
 1. Crée une activité avec un bouton.
 2. Chaque fois que tu cliques sur le bouton, ouvre automatiquement l'écran pour appeler ton numéro.
 
-<Row>
+</Column>
 
 <Column>
 
