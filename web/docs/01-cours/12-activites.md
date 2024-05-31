@@ -55,15 +55,19 @@ Vous travaillerez sur le **[travail 2](../tp/tp2)**.
 
 :::note Exercices
 
-### Exercice de navigation
+### Exercice Navigation
 
 Tu dois implémenter une application avec trois activités. Voici la navigation souhaitée :
 
-- Accueil -> Contact ou Article
-- Article -> Contact
-- Contact -> Accueil
+```mermaid
+graph TD;
+    Accueil-->Contact;
+    Accueil-->Article;
+    Article-->Contact;
+    Contact-->Accueil;
+```
 
-L'apparence n'est **pas** importante, mais les boutons doivent être au même endroit que sur les images. Ex : centré, en bas et centré, etc.
+L'apparence n'est **pas** importante. Cependant, les boutons doivent être au même endroit que sur les images. Ex : centré, en bas et centré, etc.
 
 <Row>
 
