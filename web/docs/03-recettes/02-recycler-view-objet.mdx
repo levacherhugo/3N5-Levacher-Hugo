@@ -6,15 +6,15 @@ hide_table_of_contents: true
 
 Étapes de mise en place d'un `RecyclerView` qui gère une liste d'objets sur un projet existant.
 
-Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/3N5-Prog3/tree/a24-kotlin/code/RecetteRecyclerViewObjet).
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/3N5-Prog3/tree/main/code/RecetteRecyclerViewObjet).
 
 La liste que nous allons afficher est une liste de `Personne` :
 
-```kotlin
-data class Personne(val nom: String, val prenom: String, val age: Int, val sexe: String)
-```
-
-TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-kotlin
+<GHCode
+  repo="3N5-Prog3"
+  filePath="code/RecetteRecyclerViewObjet/app/src/main/java/org/depinfo/demorecyclerviewobjet/models/Personne.kt"
+  startLine="3"
+/>
 
 <Tabs queryString="recette-objet">
   <TabItem value="build.gradle.kts" label="build.gradle.kts">
@@ -31,7 +31,7 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
     ```
 
   </TabItem>
-  <TabItem value="mon_item.xml" label="mon_item.xml">
+  <TabItem value="personne_item.xml" label="personne_itemn.xml">
     L'interface graphique de chaque item à afficher dans la liste est définie dans un fichier `xml`, comme c'est le cas pour les fichiers `xml` qui sont utilisés pour définir l'interface graphique.
 
     <Row>
@@ -61,80 +61,10 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
     Voici un exemple de fichier `personne_item.xml` si on souhaite afficher les différents champs de la classe `Personne` dans différents `TextView` :
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tvPrenom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Robert"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/tvNom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="8dp"
-                android:text="Charlebois"
-                android:textSize="24sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tvSexe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Homme"
-                android:textColor="#727272"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text=","
-                android:textColor="#727272"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/tvAge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:text="72"
-                android:textColor="#727272"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:text="ans"
-                android:textColor="#727272"
-                android:textSize="16sp" />
-        </LinearLayout>
-    </LinearLayout>
-    ```
+    <GHCode
+      repo="3N5-Prog3"
+      filePath="code/RecetteRecyclerViewObjet/app/src/main/res/layout/personne_item.xml"
+    />
 
   </TabItem>
   <TabItem value="Personne.kt" label="Personne.kt">
@@ -143,9 +73,12 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
   
       ![Recette créer personne](_02-recycler-view-objet/recette_creer_personne.png)
   
-      ```kotlin
-      data class Personne(val nom: String, val prenom: String, val age: Int, val sexe: String)
-      ```
+      <GHCode
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewObjet/app/src/main/java/org/depinfo/demorecyclerviewobjet/models/Personne.kt"
+        startLine="3"
+      />
+      
   </TabItem>
   <TabItem value="PersonneAdapter.kt" label="PersonneAdapter.kt">
 
@@ -163,22 +96,13 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
       Cette classe est appelée un **[ViewHolder](https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder)**.
       Cette classe ressemble en quelque sorte à une classe d'**Activité**.
 
-      ```kotlin
-      class PersonneAdapter {
+      <GHCode
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewObjet/app/src/main/java/org/depinfo/demorecyclerviewobjet/adapters/PersonneAdapter.kt"
+        startLine="11"
+        ignore="11:22-11:112,23-31,33-45"
+      />
 
-          // binding nous permet d'accéder à tous les champs de notre layout personne_item.xml
-          inner class PersonneItemViewHolder(private val binding: PersonneItemBinding) : RecyclerView.ViewHolder(binding.root) {
-              // Cette méthode est appelée pour mettre à jour le contenu de l'élément
-              // Lorsqu'on voudra réagir à un clic sur un élément, on ajoutera un OnClickListener ici
-              fun bind(personne: Personne) {
-                  binding.tvPrenom.text = personne.prenom
-                  binding.tvNom.text = personne.nom
-                  binding.tvSexe.text = personne.sexe
-                  binding.tvAge.text = personne.age.toString() // Attention! Il faut toujours s'assurer qu'on assigne une String.
-              }
-          }
-      }
-      ```
     </details>
 
     <details>
@@ -188,24 +112,13 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       Nous vous recommandons de définir cet objet dans le même fichier que votre `Adapter`, mais à l'extérieur de la classe `PersonneAdapter`.
 
-      ```kotlin
-      class PersonneAdapter {
-          // ...
-      }
+      <GHCode
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewObjet/app/src/main/java/org/depinfo/demorecyclerviewobjet/adapters/PersonneAdapter.kt"
+        startLine="11"
+        ignore="11:22-11:112,13-31-    // Reste du code..."
+      />
 
-      object PersonneItemDiffCallback : DiffUtil.ItemCallback<Personne>() {
-          override fun areItemsTheSame(oldItem: Personne, newItem: Personne): Boolean {
-              return oldItem == newItem
-          }
-
-          override fun areContentsTheSame(oldItem: Personne, newItem: Personne): Boolean {
-              return oldItem.nom == newItem.nom &&
-                      oldItem.prenom == newItem.prenom &&
-                      oldItem.sexe == newItem.sexe &&
-                      oldItem.age == newItem.age
-          }
-      }
-      ```
     </details>
 
     <details>
@@ -215,11 +128,12 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       La classe a besoin du **ViewHolder** et du **DiffCallback** que vous avez défini précédemment.
 
-      ```kotlin
-      class PersonneAdapter : ListAdapter<Personne, PersonneAdapter.PersonneItemViewHolder>(PersonneItemDiffCallback) {
-          // ...
-      }
-      ```
+      <GHCode
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewObjet/app/src/main/java/org/depinfo/demorecyclerviewobjet/adapters/PersonneAdapter.kt"
+        startLine="11"
+        ignore="12-31-    // Reste du code...,33-45"
+      />
 
       À ce point ci, votre environnement de développement devrait vous indiquer des erreurs.
       C'est normal, car vous n'avez pas encore implémenté les méthodes requises par la classe ListAdapter.
@@ -235,12 +149,12 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       La méthode `onCreateViewHolder` est appelée lorsqu'un nouvel élément de la liste doit être affiché.
 
-      ```kotlin
-      override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonneItemViewHolder {
-          val binding: PersonneItemBinding = PersonneItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-          return PersonneItemViewHolder(binding)
-      }
-      ```
+      <GHCode
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewObjet/app/src/main/java/org/depinfo/demorecyclerviewobjet/adapters/PersonneAdapter.kt"
+        startLine="24"
+        endLine="27"
+      />
     </details>
 
     <details>
@@ -248,11 +162,12 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       La méthode `onBindViewHolder` est appelée lorsqu'un élément de la liste doit être mis à jour.
 
-      ```kotlin
-      override fun onBindViewHolder(holder: PersonneItemViewHolder, position: Int) {
-          holder.bind(getItem(position))
-      }
-      ```
+      <GHCode
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewObjet/app/src/main/java/org/depinfo/demorecyclerviewobjet/adapters/PersonneAdapter.kt"
+        startLine="29"
+        endLine="31"
+      />
     </details>
 
     <details>
@@ -260,71 +175,22 @@ TODO : Mettre à jour le lien vers le code après avoir mergé la branche a24-ko
 
       Votre fichier PersonneAdapter.kt devrait maintenant ressembler à ceci :
 
-      ```kotlin
-      class PersonneAdapter : ListAdapter<Personne, PersonneAdapter.PersonneItemViewHolder>(PersonneItemDiffCallback) {
-
-          // binding nous permet d'accéder à tous les champs de notre layout personne_item.xml
-          inner class PersonneItemViewHolder(private val binding: PersonneItemBinding) : RecyclerView.ViewHolder(binding.root) {
-              // Cette méthode est appelée pour mettre à jour le contenu de l'élément
-              // Lorsqu'on voudra réagir à un clic sur un élément, on ajoutera un OnClickListener ici
-              fun bind(personne: Personne) {
-                  binding.tvPrenom.text = personne.prenom
-                  binding.tvNom.text = personne.nom
-                  binding.tvSexe.text = personne.sexe
-                  binding.tvAge.text =
-                      personne.age.toString() // Attention! Il faut toujours s'assurer qu'on assigne une String.
-              }
-          }
-
-          override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonneItemViewHolder {
-              val binding: PersonneItemBinding = PersonneItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-              return PersonneItemViewHolder(binding)
-          }
-
-          override fun onBindViewHolder(holder: PersonneItemViewHolder, position: Int) {
-              holder.bind(getItem(position))
-          }
-      }
-
-      object PersonneItemDiffCallback : DiffUtil.ItemCallback<Personne>() {
-          override fun areItemsTheSame(oldItem: Personne, newItem: Personne): Boolean {
-              return oldItem == newItem
-          }
-
-          override fun areContentsTheSame(oldItem: Personne, newItem: Personne): Boolean {
-              return oldItem.nom == newItem.nom &&
-                      oldItem.prenom == newItem.prenom &&
-                      oldItem.sexe == newItem.sexe &&
-                      oldItem.age == newItem.age
-          }
-      }
-      ```
+      <GHCode
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewObjet/app/src/main/java/org/depinfo/demorecyclerviewobjet/adapters/PersonneAdapter.kt"
+        startLine="11"
+      />
     </details>
 
   </TabItem>
   <TabItem value="ActivityMain.xml" label="ActivityMain.xml">
 
-On ajoute le `RecyclerView` dans le fichier `xml` de l'activité.
+    On ajoute le `RecyclerView` dans le fichier `xml` de l'activité.
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/main"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  tools:context=".MainActivity">
-
-  <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/rvPersonneAdapter"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-    app:spanCount="1"
-    tools:listitem="@layout/mon_item" />
-</LinearLayout>
-```
+    <GHCode
+      repo="3N5-Prog3"
+      filePath="code/RecetteRecyclerViewObjet/app/src/main/res/layout/activity_main.xml"
+    />
 
   </TabItem>
   <TabItem value="MainActivity.kt" label="MainActivity.kt">
@@ -334,18 +200,12 @@ On ajoute le `RecyclerView` dans le fichier `xml` de l'activité.
 
       Commencez par mettre en place le ViewBinding dans votre activité.
 
-      ```kotlin
-      class MainActivity : AppCompatActivity() {
-
-        private lateinit var binding: ActivityMainBinding
-
-        override fun onCreate(savedInstanceState: Bundle?) {
-          super.onCreate(savedInstanceState)
-          binding = ActivityMainBinding.inflate(layoutInflater)
-          setContentView(binding.root)
-        }
-      }
-      ```
+      <GHCode
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewObjet/app/src/main/java/org/depinfo/demorecyclerviewobjet/MainActivity.kt"
+        startLine="13"
+        ignore="16-16,22-24,27-50"
+      />
     </details>
 
     <details>
@@ -353,30 +213,13 @@ On ajoute le `RecyclerView` dans le fichier `xml` de l'activité.
 
       Créez une méthode pour lier l'`Adapteur` que nous venons de créer au `RecyclerView`.
 
-      ```kotlin
-      class MainActivity : AppCompatActivity() {
-
-        private lateinit var binding: ActivityMainBinding
-        private lateinit var adapter: PersonneAdapter
-
-        override fun onCreate(savedInstanceState: Bundle?) {
-          // ...
-
-          setupRecycler()
-        }
-
-        private fun setupRecycler() {
-          adapter = PersonneAdapter() // Créer l'adapteur
-          binding.rvPersonneAdapter.adapter = adapter // Assigner l'adapteur au RecyclerView
-          binding.rvPersonneAdapter.setHasFixedSize(true) // Option pour améliorer les performances
-          binding.rvPersonneAdapter.addItemDecoration( // Ajouter un séparateur entre chaque élément
-            DividerItemDecoration(
-              binding.rvPersonneAdapter.context, DividerItemDecoration.VERTICAL
-            )
-          )
-        }
-      }
-      ```
+      <GHCode
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewObjet/app/src/main/java/org/depinfo/demorecyclerviewobjet/MainActivity.kt"
+        startLine="13"
+        ignore="19-21-        // Reste du code...,24-24,37-50"
+      />
+      
     </details>
 
     <details>
@@ -384,38 +227,12 @@ On ajoute le `RecyclerView` dans le fichier `xml` de l'activité.
 
       Remplissez le recycler view avec 10 000 éléments.
 
-      ```kotlin
-      class MainActivity : AppCompatActivity() {
-
-        private lateinit var binding: ActivityMainBinding
-        private lateinit var adapter: PersonneAdapter
-
-        override fun onCreate(savedInstanceState: Bundle?) {
-          super.onCreate(savedInstanceState)
-          binding = ActivityMainBinding.inflate(layoutInflater)
-          setContentView(binding.root)
-
-          setupRecycler()
-          fillRecycler()
-        }
-
-        // ...
-
-        private fun fillRecycler() {
-            val items: MutableList<Personne> = mutableListOf()
-            for (i in 1..10000) {
-                val sexe: String
-                if (i % 2 == 0) {
-                    sexe = "Homme"
-                } else {
-                    sexe = "Femme"
-                }
-                items.add(Personne("Nom $i", "Prenom $i", i, sexe))
-            }
-            adapter.submitList(items) // Pour changer le contenu de la liste, utiliser submitList de l'adapteur
-        }
-      }
-      ```
+      <GHCode
+        repo="3N5-Prog3"
+        filePath="code/RecetteRecyclerViewObjet/app/src/main/java/org/depinfo/demorecyclerviewobjet/MainActivity.kt"
+        startLine="13"
+        ignore="19-21-        // Reste du code...,27-36-    // Reste du code"
+      />
 
     </details>
 
