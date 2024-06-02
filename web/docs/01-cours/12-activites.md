@@ -12,8 +12,9 @@ hide_table_of_contents: true
 
 :::danger Avant la séance (2h)
 
-- Regarder les vidéos
+- Regarder les vidéos de la semaine.
 - Regarder rapidement la recette pour afficher un [ActionBar simple](../03-recettes/action-bar-simple.mdx).
+- Regarder la recette pour la [navigation](../03-recettes/navigation.mdx).
 - Commencer les exercices . Arrête quand tu as complété tes 2 heures.
 
 <Row>
