@@ -6,35 +6,45 @@ hide_table_of_contents: true
 
 # Android : listes avec RecyclerView
 
-TODO:
-
-- produire une recette pour inclure un recyclerview dans une activité existante
-  - librairies nécessaires dans build.gradle
-  - Ajout du recycler view dans le layout
-  - Adapter de base pour juste mettre le toString de l'objet
-  - Raffiner le layout
-  - Réagir dans l'adapter, obtenir un contexte / naviguer
-- une video d'explication du "recycler" dans RecyclerView (plus courte)
-  - différence entre create et bind
-  - explication avec points d'arret puis ensuite avec trace
-- valider la recette en l'appliquant à un projet existant
-
 <Row>
 
 <Column>
 
 :::danger Avant la séance (2h)
 
-- Vous devez regarder les vidéos
-- Ensuite, commencez les exercices. Arrêtez-vous quand vous avez complété 2 heures.
+- Vous devez regarder les vidéos.
+- Consulter et implémenter ces 3 recettes : 
+  - [RecyclerView - String](../03-recettes/recycler-view-01-string.mdx)
+  - [RecyclerView - Objet](../03-recettes/recycler-view-02-objet.mdx)
+  - [RecyclerView - Activités](../03-recettes/recycler-view-03-activite.mdx)
+- Commencer les exercices. Arrêtez-vous quand vous aurez complété 2 heures.
+
+<Row>
+
+<Column>
 
 <Video url="https://youtu.be/nkGseYC3QAw" />
 
 [Code après video 1](https://github.com/departement-info-cem/3N5-Prog3/tree/main/code/recyclerview)
 
+</Column>
+
+<Column>
+
 <Video url="https://youtu.be/gtHix80YUx0" />
 
 [Code après video 2](https://github.com/departement-info-cem/3N5-Prog3/tree/main/code/RecyclerView-Deboguage)
+
+</Column>
+
+</Row>
+
+TODO:
+
+- une video d'explication du "recycler" dans RecyclerView (plus courte)
+  - différence entre create et bind
+  - explication avec points d'arret puis ensuite avec trace
+- valider la recette en l'appliquant à un projet existant
 
 :::
 
@@ -44,21 +54,14 @@ TODO:
 
 :::info Pendant la séance
 
-Compléter les exercices de la semaine. Continuer le travail pratique.
+- Compléter les exercices de la semaine. 
+- Implémentez le RecyclerView dans votre travail pratique.
 
 :::
 
 </Column>
 
 </Row>
-
-:::tip Recette RecyclerView de String
-
-
-
-
-
-:::
 
 :::note Exercices
 
@@ -142,65 +145,6 @@ Chaque élément de la liste possède un bouton "Supprimer" qui permet de suppri
 </Column>
 </Row>
 
-### (Optionnel 💪) Exercice Albums Favoris : Finition
-
-<Row>
-
-<Column size="6" >
-
-Pour chaque élément de la liste, et dans la page de détails, affichez l'image d'un album à partir d'une URL. Nous vous recommandons d'utiliser la librairie [Picasso](https://square.github.io/picasso/) pour vous aider.
-
-Voici la classe `Album` mise à jour :
-
-```kotlin
-data class Album(
-    val id: Int,
-    val name: String,
-    val artistName: String,
-    val coverUrl: String,
-)
-```
-
-Ajoutez un séparateur entre chaque élément de la liste.
-
-</Column>
-<Column size="3" >
-
-![Albums favoris : Supprimer](_14-recycler/albums_favoris_finition_item.png)
-
-</Column>
-<Column size="3" >
-
-![Albums favoris : Supprimer](_14-recycler/albums_favoris_finition_details.png)
-
-</Column>
-</Row>
-
-### (Optionnel Avancé 💪) Exercice Albums Favoris : Supprimer en glissant
-
-<Row>
-
-<Column size="6" >
-
-Faites en sorte qu'on soit capable de supprimer un élément de la liste en le glissant vers la droite ou vers la gauche.
-
-</Column>
-<Column size="3" >
-
-On commence à glisser de gauche à droite.
-
-![Albums favoris : Glisser début](_14-recycler/albums_favoris_glisser_debut.png)
-
-</Column>
-<Column size="3" >
-
-On a terminé de glisser, l'item a été supprimé.
-
-![Albums favoris : Glisser fin](_14-recycler/albums_favoris_glisser_fin.png)
-
-</Column>
-</Row>
-
 ### Exercice Bingo
 
 <Row>
@@ -269,3 +213,62 @@ Pour les pros de l'algorithmie 💪 : faites en sorte que chaque boule n'apparai
 </Row>
 
 :::
+
+### (Optionnel 💪) Exercice Albums Favoris : Finition
+
+<Row>
+
+<Column size="6" >
+
+Pour chaque élément de la liste, et dans la page de détails, affichez l'image d'un album à partir d'une URL. Nous vous recommandons d'utiliser la librairie [Picasso](https://square.github.io/picasso/) pour vous aider.
+
+Voici la classe `Album` mise à jour :
+
+```kotlin
+data class Album(
+    val id: Int,
+    val name: String,
+    val artistName: String,
+    val coverUrl: String,
+)
+```
+
+Ajoutez un séparateur entre chaque élément de la liste.
+
+</Column>
+<Column size="3" >
+
+![Albums favoris : Supprimer](_14-recycler/albums_favoris_finition_item.png)
+
+</Column>
+<Column size="3" >
+
+![Albums favoris : Supprimer](_14-recycler/albums_favoris_finition_details.png)
+
+</Column>
+</Row>
+
+### (Optionnel Avancé 💪) Exercice Albums Favoris : Supprimer en glissant
+
+<Row>
+
+<Column size="6" >
+
+Faites en sorte qu'on soit capable de supprimer un élément de la liste en le glissant vers la droite ou vers la gauche.
+
+</Column>
+<Column size="3" >
+
+On commence à glisser de gauche à droite.
+
+![Albums favoris : Glisser début](_14-recycler/albums_favoris_glisser_debut.png)
+
+</Column>
+<Column size="3" >
+
+On a terminé de glisser, l'item a été supprimé.
+
+![Albums favoris : Glisser fin](_14-recycler/albums_favoris_glisser_fin.png)
+
+</Column>
+</Row>
