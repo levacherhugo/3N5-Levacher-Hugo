@@ -10,7 +10,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "1.2 - présentation TP1",
+      label: "1.2 - Présentation TP1",
       id: "cours/accueil",
     },
     {
@@ -25,12 +25,17 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "3.1 - Librairies",
+      label: "3.1 - Librairie standard",
+      id: "cours/std-lib",
+    },
+    {
+      type: "doc",
+      label: "3.2 - Librairies tierces",
       id: "cours/librairies",
     },
     {
       type: "doc",
-      label: "4.1 - Structure",
+      label: "4.1 - Structurer son code",
       id: "cours/structure",
     },
     {
@@ -93,12 +98,37 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "11.1 11.2 12.1 - Tiroir",
+      label: "10.1 - Pile d'appels et exceptions",
+      id: "cours/pile-appels-exceptions",
+    },
+    {
+      type: "doc",
+      label: "10.2 - Structurer son code - Android",
+      id: "cours/structure-android",
+    },
+    {
+      type: "doc",
+      label: "11.1 - Tiroir de navigation",
       id: "cours/tiroir",
     },
     {
       type: "doc",
-      label: "12.2 13.1 - Tests",
+      label: "11.2 - Tiroir de navigation",
+      id: "cours/tiroir",
+    },
+    {
+      type: "doc",
+      label: "12.1 - Tiroir de navigation",
+      id: "cours/tiroir",
+    },
+    {
+      type: "doc",
+      label: "12.2 - Tests",
+      id: "cours/tests",
+    },
+    {
+      type: "doc",
+      label: "13.1 - Tests",
       id: "cours/tests",
     },
     {
