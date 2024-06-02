@@ -57,7 +57,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "6.2 - Activités",
+      label: "6.2 - Activités et Navigation",
       id: "cours/activites",
     },
     {
@@ -72,24 +72,24 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "7.3 - RecyclerView",
+      label: "8.1 - RecyclerView",
       id: "cours/recycler",
     },
     {
       type: "doc",
-      label: "7.4 - RecyclerView",
+      label: "8.2 - RecyclerView",
       id: "cours/recycler",
     },
     {
       type: "doc",
-      label: "10.1 - Intégration",
+      label: "9.1 - Graphique et menu",
+      id: "cours/menu",
+    },
+    {
+      type: "doc",
+      label: "9.2 - Intégration",
       id: "cours/integration-2",
       className: "remise-tp2",
-    },
-    {
-      type: "doc",
-      label: "X.X - Menu",
-      id: "cours/menu",
     },
     {
       type: "doc",

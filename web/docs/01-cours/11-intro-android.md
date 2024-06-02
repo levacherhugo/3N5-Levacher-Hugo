@@ -6,37 +6,34 @@ hide_table_of_contents: true
 
 # Introduction à Android, mise en page
 
-## Contenu
-
-TODO video : 
-- refaire tape le lapin en kotlin (avec view binding, )
-- refaire mise en page en kotlin
-
-Nous ferons quelques exemples d'applications pour revenir sur les éléments couverts dans la video.
-
-- Exécution et débogage
-- Lancement sur émulateur ou tablette
-- Utilisation de Toast et Log + filtres
-
 <Row>
 
 <Column>
 
 :::danger Avant la séance (2h)
 
-La documentation standard d'**[Android](https://developer.android.com/index.html)** (max 20 minutes).
+- Regarder les vidéos de la semaine.
+- Lisez la documentation standard d'**[Android](https://developer.android.com/index.html)** (max 20 minutes).
 
-:::
-
-</Column>
+<Row>
 
 <Column>
-
-:::tip Vidéos
 
 <Video url="https://youtu.be/C0eWT0a2aM8" />
 
+</Column>
+
+<Column>
+
 <Video url="https://youtu.be/x-dQ5Sa0Ns0" />
+
+</Column>
+
+</Row>
+
+TODO video : 
+- refaire tape le lapin en kotlin (avec view binding, )
+- refaire mise en page en kotlin
 
 :::
 
@@ -44,11 +41,14 @@ La documentation standard d'**[Android](https://developer.android.com/index.html
 
 <Column>
 
-:::info À faire pendant la séance
+:::info Pendant la séance
 
-Vous devez compléter les exercices de la semaine.
-
-Vous travaillerez sur le [travail 2](../tp/tp2).
+- Nous ferons quelques exemples d'applications pour revenir sur les éléments couverts dans la video.
+  - Exécution et débogage.
+  - Lancement sur émulateur ou tablette.
+  - Utilisation de Snackbar et Log + filtres.
+- Vous devez compléter les exercices de la semaine.
+- Vous travaillerez sur le [travail 2](../tp/tp2).
 
 :::
 
@@ -64,15 +64,15 @@ Reproduire le drapeau de l'Italie avec 3 TextView de même taille.
 
 <Row>
 
-<Column size="3">
+<Column size="4">
 
-![italia-portrait](_11-intro-android/italia-portait.png)
+![Italia Portrait](_11-intro-android/italia_portait.png)
 
 </Column>
 
-<Column size="9">
+<Column size="8">
 
-![italia-paysage](_11-intro-android/italia.png)
+![italia Paysage](_11-intro-android/italia_paysage.png)
 
 </Column>
 

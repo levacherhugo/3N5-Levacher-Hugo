@@ -1,6 +1,6 @@
 ---
-title: Activités
-description: Navigation entre activités
+title: Activités et Navigation
+description: Activités et Navigation
 hide_table_of_contents: true
 ---
 
@@ -43,7 +43,7 @@ hide_table_of_contents: true
 
 <Column>
 
-:::info À faire pendant la séance
+:::info Pendant la séance
 
 - Démo d'un `startActivity`.
 - Vous devez compléter les exercices de la semaine.
