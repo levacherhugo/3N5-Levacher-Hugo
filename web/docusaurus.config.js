@@ -29,10 +29,10 @@ const config = {
   },
 
   markdown: {
-    mermaid: true
+    mermaid: true,
   },
 
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: ["@docusaurus/theme-mermaid"],
 
   presets: [
     [
@@ -70,19 +70,19 @@ const config = {
             type: "doc",
             docId: "cours/accueil",
             position: "left",
-            label: "Cours",
+            label: "Cours 🧑🏻‍🏫",
           },
           {
             type: "docSidebar",
             position: "left",
             sidebarId: "tp",
-            label: "Travaux Pratiques",
+            label: "Travaux Pratiques ✏️",
           },
           {
             type: "docSidebar",
             position: "left",
             sidebarId: "recettes",
-            label: "Recettes",
+            label: "Recettes 📖",
           },
           {
             label: "Scripts Installation",
