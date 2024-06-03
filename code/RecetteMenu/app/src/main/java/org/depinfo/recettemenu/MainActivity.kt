@@ -17,19 +17,23 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 
+    // Lier le fichier de menu à l'activité
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.mon_menu, menu)
         return true
     }
 
+    // Réagir au clic sur les éléments de menu
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id = item.itemId
+        // On a cliqué sur le croissant
         if (id == R.id.croissant) {
             Snackbar.make(binding.root,"Voici un croissant!", Snackbar.LENGTH_SHORT)
                 .show()
             return true
         }
+        // On a cliqué sur le bouton d'aide
         if (id == R.id.help) {
             Snackbar.make(binding.root,"J'arrive à votre secours!", Snackbar.LENGTH_SHORT)
                 .show()
