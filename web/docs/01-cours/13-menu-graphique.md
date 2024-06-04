@@ -13,7 +13,7 @@ hide_table_of_contents: true
 :::danger Avant la séance (2h)
 
 - Vous devez regarder la recette pour un menu [ici](../03-recettes/menu.mdx).
-- Vous devez regarder la recette pour un graphique [ici](https://github.com/departement-info-cem/3N5-Prog3/tree/main/code/DemoGraphique).
+- Vous devez regarder la recette pour un graphique [ici](../03-recettes/graphique.mdx).
 
 :::
 
