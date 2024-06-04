@@ -119,7 +119,7 @@ const config = {
       // Décommenter et remplir pour activer l'indexation des pages par le moteur de recherche local
       algolia: {
         appId: "NWCBH5GSLJ",
-        apiKey: "1607ea4792a3f3ad58d3936668694e7a",
+        apiKey: "a36b06548f2cb9185956ca339ad18aeb",
         indexName: "info-cegepmontpetit",
         contextualSearch: true,
         searchPagePath: "search",
