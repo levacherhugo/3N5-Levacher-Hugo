@@ -88,7 +88,7 @@ const sidebars = {
     {
       type: "doc",
       label: "9.1 - Graphique et menu",
-      id: "cours/menu",
+      id: "cours/menu-graphique",
     },
     {
       type: "doc",
