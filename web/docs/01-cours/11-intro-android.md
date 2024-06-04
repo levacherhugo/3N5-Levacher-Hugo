@@ -4,7 +4,7 @@ description: Intro et mise en page
 hide_table_of_contents: true
 ---
 
-# Introduction à Android, mise en page
+# Introduction à Android, mise en page 🤖
 
 <Row>
 
@@ -31,7 +31,8 @@ hide_table_of_contents: true
 
 </Row>
 
-TODO video : 
+TODO video :
+
 - refaire tape le lapin en kotlin (avec view binding, )
 - refaire mise en page en kotlin
 
@@ -78,16 +79,15 @@ Reproduire le drapeau de l'Italie avec 3 TextView de même taille.
 
 </Row>
 
- 
 ### Exercice TapeLeLapin
 
 Vous devez programmer le jeu de Tape Le Lapin.
 
 - Au début du jeu, le lapin est sur une case
-- Le joueur tape sur un bouton 
+- Le joueur tape sur un bouton
   - S'il tape le lapin, on augmente le nombre de pafs et le lapin change de case. On affiche également un toast avec le texte POOF
   - S'il rate, on compte un flop mais le lapin reste où il est
- 
+
 <Row>
 
 <Column size="6">

@@ -40,7 +40,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4.2 - Intégration",
+      label: "4.2 - Intégration 🔨",
       id: "cours/integration-1",
       className: "remise-tp1",
     },
@@ -57,42 +57,42 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "6.1 - Intro Android",
+      label: "6.1 - Intro Android 🤖",
       id: "cours/intro-android",
     },
     {
       type: "doc",
-      label: "6.2 - Activités et Navigation",
+      label: "6.2 - Activités et Navigation 🧭",
       id: "cours/activites",
     },
     {
       type: "doc",
-      label: "7.1 - RecyclerView",
+      label: "7.1 - RecyclerView ♻️",
       id: "cours/recycler",
     },
     {
       type: "doc",
-      label: "7.2 - RecyclerView",
+      label: "7.2 - RecyclerView ♻️",
       id: "cours/recycler",
     },
     {
       type: "doc",
-      label: "8.1 - RecyclerView",
+      label: "8.1 - RecyclerView ♻️",
       id: "cours/recycler",
     },
     {
       type: "doc",
-      label: "8.2 - RecyclerView",
+      label: "8.2 - RecyclerView ♻️",
       id: "cours/recycler",
     },
     {
       type: "doc",
-      label: "9.1 - Graphique et menu",
+      label: "9.1 - Graphique et menu 📈",
       id: "cours/menu-graphique",
     },
     {
       type: "doc",
-      label: "9.2 - Intégration",
+      label: "9.2 - Intégration 🔨",
       id: "cours/integration-2",
       className: "remise-tp2",
     },
@@ -108,17 +108,17 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "11.1 - Tiroir de navigation",
+      label: "11.1 - Tiroir de navigation 🗄️",
       id: "cours/tiroir",
     },
     {
       type: "doc",
-      label: "11.2 - Tiroir de navigation",
+      label: "11.2 - Tiroir de navigation 🗄️",
       id: "cours/tiroir",
     },
     {
       type: "doc",
-      label: "12.1 - Tiroir de navigation",
+      label: "12.1 - Tiroir de navigation 🗄️",
       id: "cours/tiroir",
     },
     {
@@ -138,7 +138,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "14.2 - Intégration",
+      label: "14.2 - Intégration 🔨",
       id: "cours/integration-3",
       className: "remise-tp3",
     },

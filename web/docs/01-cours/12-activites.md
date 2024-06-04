@@ -4,7 +4,7 @@ description: Activités et Navigation
 hide_table_of_contents: true
 ---
 
-# Multiples activités et navigation
+# Activités et Navigation 🧭
 
 <Row>
 

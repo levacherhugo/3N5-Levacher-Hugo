@@ -4,7 +4,7 @@ description: Graphique et Menu
 hide_table_of_contents: true
 ---
 
-# Graphique et Menu
+# Graphique et Menu 📈
 
 <Row>
 

@@ -4,7 +4,7 @@ description: Intégration (et révision Git si nécessaire)
 hide_table_of_contents: true
 ---
 
-# Intégration
+# Intégration 🔨
 
 <Row>
 
