@@ -2,26 +2,36 @@
 hide_table_of_contents: true
 ---
 
-# ActionBar - Simple
+# Barre d'application - Simple
 
 <Row>
 
-    <Column size="9">
+    <Column size="6">
 
-        Cet ActionBar permet d'afficher une barre simple en haut de l'écran. 
-        Les options sont assez limitées pour cette barre. Pour plus d'options, veuillez vous référer à TODO inclure le lien vers le action bar complexe.
+        Cet barre d'application permet d'afficher une barre simple en haut de l'écran.
+
+        Il est possible de :
+
+        - Changer le titre de la barre
+        - Ajouter des options de menu
+
+        Il n'est pas possible de :
+
+        - Ajouter un menu hamburger
+
+        Pour une barre d'application plus complète, veuillez vous référer à TODO inclure le lien vers la barre d'application complexe.
 
     </Column>
 
-    <Column size="3">
+    <Column size="6">
 
-        ![ActionBar](_action-bar-simple/action_bar_simple.png)
+        ![Barre d'application](_app-bar-simple/app_bar_simple.png)
 
     </Column>
 
 </Row>
 
-## Activer l'ActionBar
+## Activer la barre d'application
 
 Par défaut cette barre n'est pas affichée. 
 
@@ -32,7 +42,7 @@ Pour l'activer, il faut :
 
 ## Changer le titre
 
-Une fois que l'ActionBar est activé, il est possible de changer le texte qui s'y affiche.
+Une fois que la barre d'application est activé, il est possible de changer le texte qui s'y affiche.
 
 Dans le `onCreate` de votre activité, faire comme suit :
 
@@ -46,3 +56,7 @@ class AccueilActivity : AppCompatActivity() {
     }
 }
 ```
+
+## Ajouter un menu
+
+Référez-vous à la recette sur les [menus](./menu) pour plus de détails.

@@ -13,7 +13,7 @@ hide_table_of_contents: true
 :::danger Avant la séance (2h)
 
 - Regarder les vidéos de la semaine.
-- Regarder rapidement la recette pour afficher un [ActionBar simple](../03-recettes/action-bar-simple.mdx).
+- Regarder rapidement la recette pour afficher une [barre d'application simple](../03-recettes/app-bar-simple.mdx).
 - Regarder la recette pour la [navigation](../03-recettes/navigation.mdx).
 - Commencer les exercices . Arrête quand tu as complété tes 2 heures.
 
@@ -74,7 +74,7 @@ graph TD;
 ```
 
 - Les boutons doivent être au même endroit que sur les images. Ex : centré, en bas et centré, etc.
-- Pour afficher un ActionBar simple, vous pouvez vous référer à cette [recette](../03-recettes/action-bar-simple.mdx).
+- Pour afficher une barre d'application simple, vous pouvez vous référer à cette [recette](../03-recettes/app-bar-simple.mdx).
 
 </Column>
 
@@ -135,7 +135,7 @@ Sur le même projet, tu dois maintenant rajouter un peu de logique à ton applic
 
 </Row>
 
-### (OPTIONNEL) Exercice E.T Téléphone Maison 
+### (OPTIONNEL) Exercice E.T Téléphone Maison
 
 <Row>
 
