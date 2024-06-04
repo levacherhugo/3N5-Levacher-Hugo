@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Données brut à afficher
         // Distribution des animaux favoris en pourcentage
         val notes: Map<String, Int> = mapOf(
             "Chien" to 40, // Ex : 40% des gens préfèrent les chiens
