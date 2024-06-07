@@ -24,6 +24,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:id="@+id/nv_tiroir"
-        app:menu="@menu/tiroir" /> <!-- Référence au menu créé-->
+        app:menu="@menu/tiroir"
+        app:headerLayout="@layout/nav_header"/> <!-- Référence au menu et à l'en-tête créé. -->
 
 </androidx.drawerlayout.widget.DrawerLayout>
