@@ -9,7 +9,6 @@ import com.google.android.material.snackbar.Snackbar
 import org.depinfo.recettetiroir.databinding.ActivityMainBinding
 import org.depinfo.recettetiroir.databinding.NavHeaderBinding
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
