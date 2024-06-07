@@ -48,12 +48,27 @@ Pour voir comment ajouter des icônes dans vos projets, réferez vous à la rece
 </TabItem>
 <TabItem value="activity_main.xml" label="activity_main.xml">
 
-    Voici un exemple de fichier `activity_main.xml` :
+  La mise en place d'un tiroir de navigation nécessite une structure particulière.
 
-    <GHCode
-      repo="3N5-Prog3"
-      filePath="code/RecetteTiroir/app/src/main/res/layout/activity_main.xml"
-    />
+  Grossièrement, cette structure est composée de trois éléments :
+  
+  - DrawerLayout : Englobe la vue pour gérer la transition entre le contenu principal et le tiroir.
+    - LinearLayout (ou autre) : Contenu principal de l'activité.
+    - NavigationView : Items de menu listés dans le tiroir.
+
+  <GHCode
+    repo="3N5-Prog3"
+    filePath="code/RecetteTiroir/app/src/main/res/layout/activity_main.xml"
+  />
+
+</TabItem>
+<TabItem value="MainActivity.kt" label="MainActivity.kt">
+
+  <GHCode
+    repo="3N5-Prog3"
+    filePath="code/RecetteTiroir/app/src/main/java/org/depinfo/recettetiroir/MainActivity.kt"
+    startLine="9"
+  />
 
 </TabItem>
 
