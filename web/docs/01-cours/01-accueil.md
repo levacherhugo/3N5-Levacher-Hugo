@@ -12,7 +12,7 @@ hide_table_of_contents: true
 
 ## Contenu
 
-- Application : architecture, exceptions, robustesse et tests automatisés test
+- Application : architecture, exceptions, robustesse et tests automatisés
 - Kotlin comme langage, Android comme plateforme
 - Plan de cours et logistique
 
