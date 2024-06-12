@@ -138,11 +138,11 @@ fun main() {
 Dans un fichier appelé **TraceManuelle.md**, tu dois écrire à quoi va ressembler la
 console à la fin de l'exécution du programme.
 
-Finalement tu écriras ce que vaut **b / k.length** à chaque itération.
+Finalement écris ce que vaut **b / k.length** à chaque itération.
 
 ### Exercice TraceDebugger
 
-Refaire le même exercice que précédemment, mais en utilisant le débogueur. Tu devras:
+Refaire le même exercice que précédemment, mais en utilisant le débogueur. Tu dois :
 - placer un point d'arrêt
 - évaluer une expression sur un point d'arrêt pour savoir combien vaut **b/ k.length** à chaque itération
 
@@ -156,11 +156,11 @@ Tu dois inclure JSoup dans les dépendances de ton projet dans le build.gradle (
 
 Tu dois créer un fichier exécutable appelé **SuperDuperDemo.kt**. 
 
-Dans le main, tu copieras un des exemples que tu trouves sur la page de JSOUP [https://jsoup.org/](https://jsoup.org/):
+Dans le main, copie un des exemples que tu trouves sur la page de JSOUP [https://jsoup.org/](https://jsoup.org/):
 - les exemples sont en Java
 - tu peux essayer de les traduire en Kotlin
 - tu peux demander à ChatGPT de traduire l'exemple en Kotlin
-- tu peux aussi copier le code de l'exemple en Java et le coller dans un fichier **.kt** dans Intellij, il te proposera de traduire pour toi.
+- tu peux aussi copier le code de l'exemple en Java et le coller dans un fichier **.kt** dans Intellij, il te proposera de traduire pour toi
 
 Démontre la bonne exécution de ton programme.
 
@@ -189,7 +189,7 @@ Le résultat de "111213" serait donc "31121113"
 
 ### Exercice UnUnSequence
 
-Tu programmes une méthode qui affiche une séquence de _n_ String partant du paramètre source.
+Programme une méthode qui affiche une séquence de _n_ String partant du paramètre source.
 
 ```kotlin
 fun sequence(source: String, longueur: Int): List<String>{
@@ -197,7 +197,7 @@ fun sequence(source: String, longueur: Int): List<String>{
 }
 ```
 
-Par exemple, pour **sequence("1", 6)** donne
+Par exemple, **sequence("1", 6)** donne :
 
 ```
 1
@@ -208,7 +208,7 @@ Par exemple, pour **sequence("1", 6)** donne
 312211
 ```
 
-Tu produis des programmes exécutables pour répondre aux questions suivantes :
+Produis des fichiers exécutables pour répondre aux questions suivantes :
 
 - Quel est le nombre le plus élevé qu'on peut atteindre en partant de "1"? Par exemple, dans les 100 000 premières itérations.
 - Est-ce qu'il peut arriver que le résultat de unUn soit plus court que la source? Si oui, donne un exemple.
