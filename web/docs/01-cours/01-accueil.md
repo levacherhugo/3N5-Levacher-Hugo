@@ -49,7 +49,7 @@ hide_table_of_contents: true
 
 TODO Video sur premier projet, avec point d'arrêt et arguments
 
-[Recette](../recette-ajout-librairie) sur ajouter une librairie Java dans un projet Kotlin en gradle.
+[Recette](../03-recettes/ajout-librairie.mdx) sur ajouter une librairie Java dans un projet Kotlin en gradle.
 
 :::
 
