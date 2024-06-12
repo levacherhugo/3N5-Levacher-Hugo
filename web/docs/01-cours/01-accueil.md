@@ -49,7 +49,7 @@ hide_table_of_contents: true
 
 TODO Video sur premier projet, avec point d'arrêt et arguments
 
-[Recette](../03-recettes/ajout-librairie.mdx) sur ajouter une librairie Java dans un projet Kotlin en gradle.
+[Recette](../03-recettes/ajout-librairie.mdx) pour ajouter une librairie Java dans un projet Kotlin en gradle.
 
 :::
 
@@ -77,7 +77,7 @@ TODO utiliser ChatGPT pour traduire de C# à kotlin.
 
 ### Exercice Bonjour Kotlin
 
-Tu dois créer un projet Kotlin au format gradle dont le nom de package de base (*GroupId*) est **org.nomdefamille** en changeant le nom de famille.
+Tu dois créer un projet Kotlin au format (*Build system*) gradle dont le nom de package de base (*GroupId*) est **org.nomdefamille** en changeant le nom de famille.
 
 Crée 2 classes exécutables (avec un *main* qui suit la convention Kotlin).\
 La première s'appelle **NomDeFamille.kt** et affiche "Bonjour Nom de famille" à l'exécution.\
@@ -150,9 +150,9 @@ Valide que les valeurs que tu trouves sont les mêmes que pour TraceManuelle
 
 ### Exercice librairie JSOUP
 
-Tu dois créer un projet Kotlin au format gradle dont le nom est DemoJSoup.
+Tu dois créer un projet Kotlin au format (*Build system*) gradle dont le nom est **DemoJSoup**.
 
-Tu dois inclure JSoup dans les dépendances de ton projet dans le build.gradle.
+Tu dois inclure JSoup dans les dépendances de ton projet dans le build.gradle (*indice : regarde la page **Recettes** du site)*.
 
 Tu dois créer une classe exécutable appelée **SuperDuperDemo.kt**. 
 
