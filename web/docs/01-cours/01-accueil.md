@@ -77,17 +77,17 @@ TODO utiliser ChatGPT pour traduire de C# à kotlin.
 
 ### Exercice Bonjour Kotlin
 
-Tu dois créer un projet Kotlin au format (*Build system*) gradle dont le nom de package de base (*GroupId*) est **org.nomdefamille** en changeant le nom de famille.
+Tu dois créer un projet Kotlin nommé **BonjourKotlin** au format (*Build system*) gradle dont le nom de package de base (*GroupId*) est **org.nomdefamille** en changeant le nom de famille pour le tien.
 
-Crée 2 classes exécutables (avec un *main* qui suit la convention Kotlin).\
-La première s'appelle **NomDeFamille.kt** et affiche "Bonjour Nom de famille" à l'exécution.\
-La deuxième s'appelle **PrenomDuProf.kt** et affiche "Salut prénom du prof" à l'exécution.
+Crée 2 fichiers Kotlin exécutables (avec un *main* qui suit la convention Kotlin).\
+Le premier s'appelle **NomDeFamille.kt** et affiche "Bonjour Nom de famille" à l'exécution.\
+Le deuxième s'appelle **PrenomDuProf.kt** et affiche "Salut prénom du prof" à l'exécution.
 
 N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L'EXERCICE, PUIS DE FAIRE UN PUSH.
 
 ### Exercice Triangle
 
-Reproduis un triangle en prenant sa hauteur par un argument de ligne de commandes.
+Dans le même projet, crée un fichier exécutable **Triangle.kt** qui reproduit un triangle en prenant sa hauteur par un argument de ligne de commande.
 
 ```
 *
@@ -98,14 +98,14 @@ Reproduis un triangle en prenant sa hauteur par un argument de ligne de commande
 
 Indications
 
-- La méthode qui permet de transformer une chaîne de caractères en entier est une méthode statique de la classe Integer.
-- Pour afficher un caractère sans sauter de ligne, print()
+- Pour transformer une chaîne de caractères en entier, tu peux utiliser une méthode de la classe String.
+- Pour afficher un caractère sans sauter de ligne : `print()`
 
-N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L"EXERCICE PUIS DE FAIRE UN PUSH.
+N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L'EXERCICE PUIS DE FAIRE UN PUSH.
 
 ### Exercice Triangles
 
-Tu dois produire 5 triangles de suite en utilisant une fonction kotlin qui:
+Dans un fichier exécutable **Triangles.kt**, tu dois produire 5 triangles de suite en utilisant une fonction Kotlin qui:
 - prend la hauteur en paramètre
 - renvoie une **String** avec le triangle
 
@@ -114,9 +114,9 @@ fun triangle(hauteur : Int) : String {
     return "TODO"
 }
 ```
-Utilise cette fonction pour faire un main qui affiche 5 triangles de suite de taille 4, 8, 10 et 100.
+Utilise des appels à cette fonction dans le main pour afficher 5 triangles de suite de taille 4, 8, 10 et 100.
 
-N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L"EXERCICE PUIS DE FAIRE UN PUSH.
+N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L'EXERCICE PUIS DE FAIRE UN PUSH.
 
 ### Exercice TraceManuelle
 
@@ -154,9 +154,9 @@ Tu dois créer un projet Kotlin au format (*Build system*) gradle dont le nom es
 
 Tu dois inclure JSoup dans les dépendances de ton projet dans le build.gradle (*indice : regarde la page **Recettes** du site)*.
 
-Tu dois créer une classe exécutable appelée **SuperDuperDemo.kt**. 
+Tu dois créer un fichier exécutable appelé **SuperDuperDemo.kt**. 
 
-Dedans tu copieras un des exemples que tu trouves sur la page de JSOUP [https://jsoup.org/](https://jsoup.org/):
+Dans le main, tu copieras un des exemples que tu trouves sur la page de JSOUP [https://jsoup.org/](https://jsoup.org/):
 - les exemples sont en Java
 - tu peux essayer de les traduire en Kotlin
 - tu peux demander à ChatGPT de traduire l'exemple en Kotlin
@@ -164,7 +164,7 @@ Dedans tu copieras un des exemples que tu trouves sur la page de JSOUP [https://
 
 Démontre la bonne exécution de ton programme.
 
-N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L"EXERCICE PUIS DE FAIRE UN PUSH.
+N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L'EXERCICE PUIS DE FAIRE UN PUSH.
 
 ## Défi de la semaine (optionnel)
 
