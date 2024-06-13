@@ -87,7 +87,9 @@ N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L'EXERCICE, PUIS DE FAIRE UN 
 
 Dans le même projet, crée un fichier exécutable **CsharpAKotlin.kt**.\
 Utilise l'IA de ton choix (ChatGPT, Claude, ...) pour traduire le script C<sup>#</sup> suivant en Kotlin.\
-Valide qu'il fonctionne bien en le copiant et en le roulant dans ton fichier **CsharpAKotlin.kt**.
+Copie et roule le code dans ton fichier **CsharpAKotlin.kt**.\
+Valide que tout fonctionne bien (nom à afficher passé en argument, etc.).\
+Si ce n'est pas le cas, corrige-le pour que tout fonctionne bien.
 
 ```csharp
 using System;
@@ -103,13 +105,13 @@ public class Bonjour
         }
         else
         {
-            Console.WriteLine("No name provided!");
+            Console.WriteLine("SVP veuillez fournir un nom!");
         }
     }
 
     public static void Afficher(string nom)
     {
-        Console.WriteLine("Bonjour, " + nom + "!");
+        Console.WriteLine("Bonjour " + nom + "!");
     }
 }
 ```
