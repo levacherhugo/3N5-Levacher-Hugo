@@ -73,8 +73,6 @@ TODO Video sur premier projet, avec point d'arrêt et arguments
 
 :::note Exercices
 
-TODO utiliser ChatGPT pour traduire de C# à kotlin.
-
 ### Exercice Bonjour Kotlin
 
 Tu dois créer un projet Kotlin nommé **BonjourKotlin** au format (*Build system*) gradle dont le nom de package de base (*GroupId*) est **org.nomdefamille** en changeant le nom de famille pour le tien.
@@ -85,9 +83,42 @@ Le deuxième s'appelle **PrenomDuProf.kt** et affiche "Salut prénom du prof" à
 
 N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L'EXERCICE, PUIS DE FAIRE UN PUSH.
 
+### Exercice C<sup>#</sup> à Kotlin
+
+Dans le même projet, crée un fichier exécutable **CsharpAKotlin.kt**.\
+Utilise l'IA de ton choix (ChatGPT, Claude, ...) pour traduire le script C<sup>#</sup> suivant en Kotlin.\
+Valide qu'il fonctionne bien en le copiant et en le roulant dans ton fichier **CsharpAKotlin.kt**.
+
+```csharp
+using System;
+
+public class Bonjour
+{
+    public static void Main(string[] args)
+    {
+        if (args.Length > 0)
+        {
+            string nom = args[0];
+            Afficher(nom);
+        }
+        else
+        {
+            Console.WriteLine("No name provided!");
+        }
+    }
+
+    public static void Afficher(string nom)
+    {
+        Console.WriteLine("Bonjour, " + nom + "!");
+    }
+}
+```
+
+N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L'EXERCICE, PUIS DE FAIRE UN PUSH.
+
 ### Exercice Triangle
 
-Dans le même projet, crée un fichier exécutable **Triangle.kt** qui reproduit un triangle en prenant sa hauteur par un argument de ligne de commande.
+Toujours dans le même projet, crée un fichier exécutable **Triangle.kt** qui reproduit un triangle en prenant sa hauteur par un argument de ligne de commande.
 
 ```
 *
@@ -120,8 +151,6 @@ N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L'EXERCICE PUIS DE FAIRE UN P
 
 ### Exercice TraceManuelle
 
-TODO faire un exo avec du code, dire quelle ligne s'exécute dans quel ordre et quels affichages se font en console.
-
 ```kotlin
 fun main() {
     for (i : Int in 1..1) {
@@ -136,17 +165,17 @@ fun main() {
 }
 ```
 Dans un fichier appelé **TraceManuelle.md**, tu dois écrire à quoi va ressembler la
-console à la fin de l'exécution du programme.
+console à la fin de l'exécution de ce code (sans le rouler).
 
-Finalement écris ce que vaut **b / k.length** à chaque itération.
+Finalement, écris ce que vaut **`b / k.length`** à chaque itération.
 
 ### Exercice TraceDebugger
 
-Refaire le même exercice que précédemment, mais en utilisant le débogueur. Tu dois :
+Refaire le même exercice que précédemment, mais en roulant le code et en utilisant le débogueur. Tu dois :
 - placer un point d'arrêt
-- évaluer une expression sur un point d'arrêt pour savoir combien vaut **b/ k.length** à chaque itération
+- évaluer une expression sur un point d'arrêt pour savoir combien vaut **`b / k.length`** à chaque itération
 
-Valide que les valeurs que tu trouves sont les mêmes que pour TraceManuelle
+Valide que les valeurs que tu trouves sont les mêmes que celles que tu as écrites dans **TraceManuelle.md**.
 
 ### Exercice librairie JSOUP
 

@@ -8,10 +8,9 @@ hide_table_of_contents: true
 
 ## Contenu
 
-- Exemples d'applications pour revenir sur les éléments couverts dans la video
+- Exemples d'applications pour revenir sur les éléments couverts dans la vidéo
 - Correction commentée de certains exercices de la semaine
 - Focus sur la null safety 
-  - https://en.wikipedia.org/wiki/Null_pointer#History
   - https://en.wikipedia.org/wiki/Null_pointer#History
 - Focus sur val et var
 - Focus sur les annotations de types
@@ -22,7 +21,7 @@ hide_table_of_contents: true
 
 :::danger Avant la séance (2h)
 
-1. Parcourir la page Wikipedia concernant **[Kotlin](<https://fr.wikipedia.org/wiki/Kotlin_(langage)>)** (max 20 minutes)
+1. Parcourir la page Wikipédia concernant **[Kotlin](<https://fr.wikipedia.org/wiki/Kotlin_(langage)>)** (max 20 minutes)
 2. Regarder les vidéos de théorie
 3. Commencer les exercices de la semaine. Arrêter après 2h de travail
 
@@ -59,7 +58,7 @@ hide_table_of_contents: true
 
 :::note Exercices
 
-Le but des exercices est de découvrir kotlin par la pratique.
+Le but des exercices est de découvrir Kotlin par la pratique.
 
 Certaines syntaxes sont pareilles en C# et en Kotlin, alors que d'autres sont différentes. À toi de trouver lesquelles.
 
@@ -71,20 +70,20 @@ Certaines syntaxes sont pareilles en C# et en Kotlin, alors que d'autres sont di
 
 Etant donné le code suivant et sans utiliser l'IDE, déterminer le type de chaque variable.
 
-Consigne ta réponse dans un document Word appelé **types.docx**
+Consigne ta réponse dans un fichier **types.md**
 
 TODO
 ```kotlin
 val a = 1                                   // type est            
 val aa = 1L                                 // type est
-val aaa = a * 25 + aa * 100
+val aaa = a * 25 + aa * 100                 // type est
 val b = 1.0                                 // type est 
 val c = "1"                                 // type est 
 val d = true                                // type est
 val laChose = a +  b + c                    // type est
-val lautreChose = b + c                    // type est
-val k = listOf("1", "2", "3")
-val l = mutableListOf(true, false, true)
+val lautreChose = b + c                     // type est
+val k = listOf("1", "2", "3")               // type est
+val l = mutableListOf(true, false, true)    // type est
 ```
 
 Fais-toi un projet avec un main pour exécuter le code en débogage. Prends des screenshots de l'écran du débogueur
@@ -96,9 +95,9 @@ Des surprises?
 
 Tu peux soit créer un projet appelé Pyramide ou un fichier Pyramide.kt dans un projet existant.
 
-Reproduis un triangle en prenant sa hauteur par un argument de ligne de commandes.
+Reproduis un triangle en prenant sa hauteur par un argument de ligne de commande.
 
-Par exemple, pour un argument de 3, le programme doit afficher
+Par exemple, pour un argument de 3, le programme doit afficher :
 ```
   *
  ***
@@ -109,7 +108,7 @@ Teste ton code sur les hauteurs suivantes 1, 2, 3, 10, 1000.
 
 ### Exercice Moyenne
 
-Dans un projet ou un fichier avec un main, tu dois:
+Dans un projet ou un fichier avec un main, tu dois :
 - définir une fonction qui prend un paramètre **n** et crée un tableau de **n** entiers tirés au hasard entre 0 et 100 inclus.
 ```kotlin
 fun creeTableauAleatoire(n: Int): Array<Int> {
