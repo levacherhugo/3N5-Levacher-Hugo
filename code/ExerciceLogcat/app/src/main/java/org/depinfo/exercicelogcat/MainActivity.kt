@@ -27,9 +27,16 @@ class MainActivity : AppCompatActivity() {
                 InputStreamReader(assets.open(fileName), "UTF-8")
             )
 
-            var mLine: String;
-            while (reader.readLine().also { mLine = it } != null) {
-                Log.i("TAG", "logcat: ")
+            var line: String;
+            while (reader.readLine().also { line = it } != null) {
+                val words: List<String> = line.split("|")
+                when (words[1]) {
+                    "info" -> Log.i(words[0], words[2])
+                    "warn" -> Log.w(words[0], words[2])
+                    "error" -> Log.e(words[0], words[2])
+                    "debug" -> Log.d(words[0], words[2])
+                    "verbose" -> Log.v(words[0], words[2])
+                }
             }
         } finally {
             reader?.close()
