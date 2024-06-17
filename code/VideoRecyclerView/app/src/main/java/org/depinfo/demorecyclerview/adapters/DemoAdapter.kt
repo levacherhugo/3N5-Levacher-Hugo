@@ -8,24 +8,24 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import org.depinfo.demorecyclerview.databinding.DemoItemBinding
 
-class DemoAdapter : ListAdapter<String, DemoAdapter.AlbumViewHolder>(DemoDiffCallback) {
+class DemoAdapter : ListAdapter<String, DemoAdapter.DemoViewHolder>(DemoDiffCallback) {
 
-    inner class AlbumViewHolder(private val binding: DemoItemBinding) :
+    inner class DemoViewHolder(private val binding: DemoItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: String) {
             binding.tvItem.text = item
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AlbumViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DemoViewHolder {
         val binding = DemoItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         Log.i("MON_DEBUG", "onCreate")
-        val holder : AlbumViewHolder = AlbumViewHolder(binding)
+        val holder : DemoViewHolder = DemoViewHolder(binding)
 
         return holder
     }
 
-    override fun onBindViewHolder(holder: AlbumViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: DemoViewHolder, position: Int) {
         val item: String = getItem(position)
         holder.bind(item)
         Log.i("MON_DEBUG", "onBind ${String.format("%-3s", position)} : $item")
