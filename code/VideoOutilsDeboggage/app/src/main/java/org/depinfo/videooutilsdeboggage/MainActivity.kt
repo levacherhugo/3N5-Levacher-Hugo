@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             val x = i
             val y = 1000 / i
             Log.i("MON_SUPER_LOG", "x = $x, y = $y")
-            Log.e("UN AUTRE LOG", "a = $x, b = $y")
+            Log.e("UN_AUTRE_LOG", "a = $x, b = $y")
         }
     }
 }
