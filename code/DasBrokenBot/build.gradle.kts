@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.seleniumhq.selenium:selenium-java:4.18.1")
+    implementation("org.seleniumhq.selenium:selenium-java:4.23.1")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 
