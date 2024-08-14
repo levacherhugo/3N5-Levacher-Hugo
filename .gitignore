@@ -1,0 +1,7 @@
+**/.idea
+**/build
+**/.DS_Store
+.DS_Store
+**/.gradle
+**/target
+**/bin

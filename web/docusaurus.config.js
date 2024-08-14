@@ -1,11 +1,12 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-import { themes } from 'prism-react-renderer';
+
+import { themes } from "prism-react-renderer";
 
 const siteConfig = require("./config");
 
-const lightCodeTheme = themes.vsLight
-const darkCodeTheme = themes.vsDark
+const lightCodeTheme = themes.vsLight;
+const darkCodeTheme = themes.vsDark;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -28,10 +29,10 @@ const config = {
   },
 
   markdown: {
-    mermaid: true
+    mermaid: true,
   },
 
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: ["@docusaurus/theme-mermaid"],
 
   presets: [
     [
@@ -67,15 +68,26 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "cours/rencontre1.1",
+            docId: "cours/accueil",
             position: "left",
-            label: "Cours",
+            label: "Cours 🧑🏻‍🏫",
           },
           {
             type: "docSidebar",
             position: "left",
             sidebarId: "tp",
-            label: "Travaux Pratiques",
+            label: "Travaux Pratiques ✏️",
+          },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "recettes",
+            label: "Recettes 📖",
+          },
+          {
+            label: "Scripts Installation",
+            href: `https://raw.githubusercontent.com/departement-info-cem/scripts-mobile/main/installation-mobile.ps1`,
+            position: "right",
           },
         ],
       },
@@ -91,23 +103,31 @@ const config = {
               },
             ],
           },
+          {
+            items: [
+              {
+                label: "Département d'informatique",
+                href: `https://info.cegepmontpetit.ca/accueil`,
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()}. ${
           siteConfig.nom
         }. CÉGEP Édouard-Montpetit.`,
       },
       // Décommenter et remplir pour activer l'indexation des pages par le moteur de recherche local
-      // algolia: {
-      //   appId: '',
-      //   apiKey: '',
-      //   indexName: '',
-      //   contextualSearch: true,
-      //   searchPagePath: 'search',
-      // },
+      algolia: {
+        appId: "NWCBH5GSLJ",
+        apiKey: "a36b06548f2cb9185956ca339ad18aeb",
+        indexName: "info-cegepmontpetit",
+        contextualSearch: true,
+        searchPagePath: "search",
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ["csharp", "java", "dart"],
+        additionalLanguages: ["csharp", "java", "dart", "kotlin"],
       },
       metadata: [
         {
