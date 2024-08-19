@@ -31,7 +31,7 @@ const sidebars = {
     {
       type: "doc",
       label: "3.2 - Librairies tierces",
-      id: "cours/librairies",
+      id: "cours/librairies-tierces",
     },
     {
       type: "doc",

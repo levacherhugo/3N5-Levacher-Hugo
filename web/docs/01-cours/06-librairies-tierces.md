@@ -1,17 +1,10 @@
 ---
-title: Librairies externes
-description: Librairies externes
+title: Librairies tierces
+description: Librairies tierces
 hide_table_of_contents: true
 ---
 
 # Kotlin et librairies tierces
-
-## Contenu
-
-- Demo de MavenRepository: librairie, version et pom.xml
-- Librairies Java dans Kotlin (bcp de librairies en Java)
-- 100% interoperability
-- Exemple de recherche de librairie : exemple de [https://square.github.io](https://square.github.io)
 
 <Row>
 
@@ -19,17 +12,7 @@ hide_table_of_contents: true
 
 :::danger Avant la séance (2h)
 
-Il existe des milliers de librairies Java pour faire presque tout qui fonctionnent généralement bien. De nombreuses compagnies tech comme Google Twitter ou Square partagent leur librairies.
-
-:::
-
-</Column>
-
-<Column>
-
-:::tip Vidéos
-
-Pas de vidéos cette semaine
+Il existe des milliers de librairies Java pour faire presque tout qui fonctionnent généralement bien. De nombreuses compagnies tech comme [Google](https://github.com/search?q=topic%3Aandroid+org%3Agoogle+fork%3Atrue&type=repositories), [Twitter](https://github.com/Twitter) ou [Square](https://github.com/search?q=topic%3Aandroid+org%3Asquare+fork%3Atrue&type=repositories) partagent leur librairies.
 
 :::
 
@@ -39,8 +22,13 @@ Pas de vidéos cette semaine
 
 :::info À faire pendant la séance
 
+- Demo de MavenRepository: librairie, version et pom.xml
+- Exemple de recherche de librairie : exemple de [https://square.github.io](https://square.github.io)
+  - Interopérabilité des librairies Java et Kotlin
 - Compléter les exercices de la semaine
-- **Continuer le [premier travail](../tp/tp1)**
+- **Continuer le [TP1](../tp/tp1)**
+
+**Attention** : une grande partie du travail de ces exercices consiste à faire vos propres recherches. Lorsqu'on commence à utiliser une nouvelle librairie, il est généralement recommendé de commencer en lisant la documentation et les exemples fournis par les développeurs de la librairie.
 
 :::
 
@@ -52,7 +40,7 @@ Pas de vidéos cette semaine
 
 ### Exercice Jsoup
 
-Vous devez écrire un petit programme qui prend une url en paramètre, qui télécharge la page web correspondant, puis qui extrait toutes les balises *a* de la page et affiche leur attribut href.
+À l'aide de la librairie [Jsoup](https://jsoup.org/), vous devez écrire un petit programme qui prend une url en paramètre, qui télécharge la page web correspondant, puis qui extrait toutes les balises *a* de la page et affiche leur attribut href.
 
 Par exemple, si la page contient
 
@@ -64,7 +52,7 @@ le programme devra afficher `test = pipo.html` dans la console.
 
 ### Exercice Validation d'un courriel valide
 
-Petite recherche, tu dois trouver une librairie qui valide si un courriel est valide. Écris un petit programme avec un main pour voir si la méthode fournie par la librairie fonctionne sur les exemples suivants:
+Tu dois trouver une librairie qui valide si un courriel est valide. Écris un programme pour voir si la méthode fournie par la librairie fonctionne sur les exemples suivants:
 
 - Ok : jo@pipo.org
 - Ok : ma_mu@m.ca
@@ -101,6 +89,6 @@ void testeCetteListe(List<Integer> liste){
 
 Le but est de voir quelle liste est la plus performante entre LinkedList, ArrayList et une dernière que vous trouverez dans la librairie suivante [GapList](http://www.magicwerk.org/page-collections-download.html).
 
-Du coup avec un *main* qui appelle la méthode testeCetteListe pour une LinkedList puis une ArrayList puis une GapList, vous aurez une bonne idée des performances respectives.
+Ainsi, avec un `main` qui appelle la méthode testeCetteListe pour une LinkedList puis une ArrayList puis une GapList, vous aurez une bonne idée des performances respectives.
 
 :::
