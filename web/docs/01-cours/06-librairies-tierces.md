@@ -74,7 +74,7 @@ On souhaite comparer le temps d'exécution nécessaire pour:
 Pour permettre de tester plusieurs listes, on vous recommande de créer une méthode
 
 ```java
-fun testeCetteListe(liste: List<Int>) {
+fun testeCetteListe(liste: MutableList<Int>) {
     val random: Random = Random(1234)
     val a = System.currentTimeMillis()
     // ajouter 100 000 elements en dernière position liste.add(nombre);
