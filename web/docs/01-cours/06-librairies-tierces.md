@@ -74,15 +74,15 @@ On souhaite comparer le temps d'exécution nécessaire pour:
 Pour permettre de tester plusieurs listes, on vous recommande de créer une méthode
 
 ```java
-void testeCetteListe(List<Integer> liste){
-    Random random = new Random(1234);
-    long a = System.currentTimeMillis();
+fun testeCetteListe(liste: List<Int?>?) {
+    val random: Random = Random(1234)
+    val a = System.currentTimeMillis()
     // ajouter 100 000 elements en dernière position liste.add(nombre);
-    long b = System.currentTimeMillis();
+    val b = System.currentTimeMillis()
     // ajouter 100 000 elements en première position liste.add(0, nombre);
-    long c = System.currentTimeMillis();
+    val c = System.currentTimeMillis()
     // ajouter 100 000 elements position au hasard liste.add(random.nextInt(liste.size() + 1), nombre);
-    long d = System.currentTimeMillis();
+    val d = System.currentTimeMillis()
     // afficher b-a, c-b, d-c qui sont les durées d'exécution en millisecondes
 }
 ```
