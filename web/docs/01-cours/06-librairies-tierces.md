@@ -50,7 +50,7 @@ Par exemple, si la page contient
 
 le programme devra afficher `test = pipo.html` dans la console.
 
-### Exercice Validation d'un courriel valide
+### Exercice ValidationCourriel
 
 Tu dois trouver une librairie qui valide si un courriel est valide. Écris un programme pour voir si la méthode fournie par la librairie fonctionne sur les exemples suivants:
 
