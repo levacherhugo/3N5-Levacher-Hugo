@@ -47,7 +47,9 @@ hide_table_of_contents: true
 
 :::tip Contenu pour cette semaine
 
-TODO Video sur premier projet, avec point d'arrêt et arguments
+Video de création d'un projet, avec point d'arrêt et arguments
+
+<Video url="https://youtu.be/dMN2_NlYBpU"/>
 
 [Recette](../03-recettes/ajout-librairie.mdx) pour ajouter une librairie Java dans un projet Kotlin en gradle.
 
@@ -78,8 +80,8 @@ TODO Video sur premier projet, avec point d'arrêt et arguments
 Tu dois créer un projet Kotlin nommé **BonjourKotlin** au format (*Build system*) gradle dont le nom de package de base (*GroupId*) est **org.nomdefamille** en changeant le nom de famille pour le tien.
 
 Crée 2 fichiers Kotlin exécutables (avec un *main* qui suit la convention Kotlin).\
-Le premier s'appelle **NomDeFamille.kt** et affiche "Bonjour Nom de famille" à l'exécution.\
-Le deuxième s'appelle **PrenomDuProf.kt** et affiche "Salut prénom du prof" à l'exécution.
+Le premier s'appelle **NomDeFamille.kt** et affiche "Bonjour [Nom de famille]" à l'exécution.\
+Le deuxième s'appelle **PrenomDuProf.kt** et affiche "Salut [Prénom du prof]" à l'exécution.
 
 N'OUBLIE PAS DE FAIRE UN COMMIT DANS TON REPO AVEC L'EXERCICE, PUIS DE FAIRE UN PUSH.
 
