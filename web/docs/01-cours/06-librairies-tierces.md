@@ -62,7 +62,7 @@ Tu dois trouver une librairie qui valide si un courriel est valide. Écris un pr
 - Ko : a.b@ab
 - Ko : jo
 
-### Exercice ArrayList LinkedList et GapList (externe)
+### Exercice SuperListe
 
 On veut comparer les performances de plusieurs implémentations de List quand on parle de performance pour l'insertion.
 On souhaite comparer le temps d'exécution nécessaire pour:
@@ -89,6 +89,6 @@ void testeCetteListe(List<Integer> liste){
 
 Le but est de voir quelle liste est la plus performante entre LinkedList, ArrayList et une dernière que vous trouverez dans la librairie suivante [GapList](http://www.magicwerk.org/page-collections-download.html).
 
-Ainsi, avec un `main` qui appelle la méthode testeCetteListe pour une LinkedList puis une ArrayList puis une GapList, vous aurez une bonne idée des performances respectives.
+Ainsi, avec un `main` qui appelle la méthode testeCetteListe pour une **LinkedList** puis une **ArrayList** puis une **GapList**, vous aurez une bonne idée des performances respectives.
 
 :::
