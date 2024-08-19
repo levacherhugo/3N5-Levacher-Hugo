@@ -19,7 +19,7 @@ hide_table_of_contents: true
 
 <Column>
 
-<Video url="https://youtu.be/C0eWT0a2aM8" />
+<Video url="https://youtu.be/5rBZ4P06usU" />
 
 </Column>
 
@@ -31,9 +31,8 @@ hide_table_of_contents: true
 
 </Row>
 
-TODO video :
+Video :
 
-- refaire tape le lapin en kotlin (avec view binding, )
 - refaire mise en page en kotlin
 
 :::
