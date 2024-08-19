@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupDrawer() {
-
         setupDrawerApplicationBar()
         setupDrawerItemSelected()
         setupDrawerHeader()
@@ -40,15 +39,6 @@ class MainActivity : AppCompatActivity() {
         // Faire en sorte que le menu hamburger se transforme en flèche au clic, et vis versa
         binding.dlTiroir.addDrawerListener(actionBarDrawerToggle)
         actionBarDrawerToggle.syncState()
-    }
-
-    // Peut aussi se combiner avec le menu qui se retrouve dans la barre d'application
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Réagir au clic sur le menu hamburger
-        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item)
     }
 
     private fun setupDrawerItemSelected() {
@@ -77,6 +67,17 @@ class MainActivity : AppCompatActivity() {
         // Si on veut avoir du contenu dynamique dans l'en-tête,
         val headerBinding: NavHeaderBinding = NavHeaderBinding.bind(binding.nvTiroir.getHeaderView(0))
         headerBinding.headerMathResult.text = (57 + 23).toString()
+    }
+
+    // Se déclenche lorsqu'un élément de la barre d'application est sélectionné
+    // Exemple : lorsqu'on clique sur le menu hamburger
+    // Peut aussi se combiner avec les autres options de menu qui se retrouvent dans la barre d'application
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Réagir au clic sur le menu hamburger
+        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     // Les deux méthodes suivantes permettent de synchroniser le menu hamburger
