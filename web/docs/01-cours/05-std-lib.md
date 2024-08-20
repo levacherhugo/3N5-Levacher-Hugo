@@ -25,9 +25,9 @@ Kotlin peut utiliser
 - les librairies Java incluant tout le contenu de la librairie standard exemple java.util.List
 - la librairie standard de Kotlin qui est une surcouche de la librairie Java https://kotlinlang.org/api/latest/jvm/stdlib/
 
-Une liste mutable peut faire tout ce que peut faire une liste immutables, alors:
-- pourquoi la immutables existe?
-- pourquoi on recommande d'utiliser le plus possible des collection immutables?
+Une liste mutable peut faire tout ce que peut faire une liste immuable, alors:
+- pourquoi la immuable existe?
+- pourquoi on recommande d'utiliser le plus possible des collection immuables?
 
 Sources:
 - https://web.mit.edu/6.005/www/fa15/classes/09-immutability/#:~:text=The%20answer%20is%20that%20immutable,much%20harder%20to%20enforce%20contracts.

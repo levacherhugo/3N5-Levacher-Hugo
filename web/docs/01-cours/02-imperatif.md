@@ -58,21 +58,16 @@ hide_table_of_contents: true
 
 :::note Exercices
 
-Le but des exercices est de découvrir Kotlin par la pratique.
-
+Le but des exercices est de découvrir Kotlin par la pratique.  
 Certaines syntaxes sont pareilles en C# et en Kotlin, alors que d'autres sont différentes. À toi de trouver lesquelles.
-
-### Exercice de compréhension sur val var
-
-**val** et **var** sont des mots clés très similaires en lecture rapide. Pourtant, ils sont très différents.
 
 ### Exercice de compréhension sur les types
 
-Etant donné le code suivant et sans utiliser l'IDE, déterminer le type de chaque variable.
+Crée un nouveau projet **Types**.
 
-Consigne ta réponse dans un fichier **types.md**
+Etant donné le code suivant, et sans rouler de code ni utiliser l'IDE, détermine le type de chaque variable.  
+Consigne tes réponses dans un fichier **types.md** à la racine de ton projet **Types**.
 
-TODO
 ```kotlin
 val a = 1                                   // type est            
 val aa = 1L                                 // type est
@@ -86,16 +81,24 @@ val k = listOf("1", "2", "3")               // type est
 val l = mutableListOf(true, false, true)    // type est
 ```
 
-Fais-toi un projet avec un main pour exécuter le code en débogage. Prends des screenshots de l'écran du débogueur
-qui te permet de déterminer le type de chaque **val**.
+Dans le *main*, copie et exécute ce code en mode débogage.  
+Prends des screenshots de l'écran du débogueur qui te permettent de déterminer le type de chaque **val**.
 
 Des surprises?
 
+### Exercice de compréhension sur val / var
+
+**val** et **var** sont des mots clés très similaires en lecture rapide. Pourtant, ils sont très différents.  
+Dans un fichier **valvar.md** à la racine de ton projet **Types**, explique en tes mots la différence entre les deux.
+
+### Exercice EclateTaString
+
+Crée un nouveau projet **EclateTaString**, ou bien dans un projet existant un nouveau fichier exécutable (avec une fonction *main*) **EclateTaString.kt**.  
+Ce programme doit prendre en argument de ligne de commande (paramètre de la méthode main) une chaîne de caractères et afficher chaque caractère de la chaîne individuellement sur une ligne.
+
 ### Exercice Pyramide
 
-Tu peux soit créer un projet appelé Pyramide ou un fichier Pyramide.kt dans un projet existant.
-
-Reproduis un triangle en prenant sa hauteur par un argument de ligne de commande.
+Crée un programme (nouveau projet ou nouveau fichier exécutable) qui reproduit un triangle en obtenant sa hauteur par un argument de ligne de commande.
 
 Par exemple, pour un argument de 3, le programme doit afficher :
 ```
@@ -104,53 +107,44 @@ Par exemple, pour un argument de 3, le programme doit afficher :
 *****
 ```
 
-Teste ton code sur les hauteurs suivantes 1, 2, 3, 10, 1000.
+Teste ton code sur les hauteurs suivantes : 1, 2, 3, 10, 1000.
 
 ### Exercice Moyenne
 
-Dans un projet ou un fichier avec un main, tu dois :
-- définir une fonction qui prend un paramètre **n** et crée un tableau de **n** entiers tirés au hasard entre 0 et 100 inclus.
+Dans un nouveau projet ou un nouveau fichier exécutable :
+- Définis une fonction qui prend un paramètre **n** et retourne un tableau de **n** entiers tirés au hasard entre 0 et 100 inclus.
 ```kotlin
 fun creeTableauAleatoire(n: Int): Array<Int> {
     // ton code ici
 }
 ```
-- calcule la somme, la moyenne, le min et le max et affiche les dans la console (tu es fortement encouragé à définir des fonctions ici pour te pratiquer).
+- Calcule la somme, la moyenne, le min et le max d'un tableau d'entiers et affiche-les dans la console.
 
-Indications
-- https://kotlinlang.org/docs/arrays.html#create-arrays pour les manipulations de tableau en Kotlin
-- besoin d’un objet de la classe Random pour les tirages aléatoires : https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.random/-random/
-- pour trouver la documentation d’une classe, on Google `kotlin nomdelaclasse Random`, ici `kotlin class Random`
+Il t'est fortement recommandé ici de définir des fonctions et de les appeler dans le *main*.
 
-### Exercice Web
+Liens pour des ressources :
+- [Manipulation de tableaux en Kotlin](https://kotlinlang.org/docs/arrays.html#create-arrays)
+- [Classe Random pour les tirages aléatoires](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.random/-random/)
 
-Ton programme doit prendre en argument une adresse (URL) d’un site web et afficher son contenu dans la console. Pour faire cela, tu peux utiliser une librairie externe ou la librairie standard.
-
-Commence par l'implémenter en utilisant la librairie [jsoup](https://jsoup.org/), puis refais-le avec l'une des autres alternatives suivantes pour comparer :
-
-- [Librairie standard](http://docs.oracle.com/javase/tutorial/networking/urls/readingWriting.html)
-- [Librairie Guava](https://stackoverflow.com/a/6068228/1227197)
-- [Autres (Java 9, Scanner, Apache Commons)](https://www.techiedelight.com/read-contents-of-url-into-string-java/)
-
-### Exercice EclateTaString
-
-Crée un programme qui prend en argument (le paramètre de la méthode main) une chaîne de caractères et qui affiche chaque caractère de la chaîne individuellement sur une ligne.
+**Astuce** : pour trouver la documentation d’une classe, on google `kotlin class nomdelaclasse`, par exemple ici `kotlin class Random`
 
 ### Exercice BinariseTonEntier
 
-Crée un programme qui prend en argument (le paramètre de la méthode main) une chaîne de caractères.
-
-Tu dois d'abord convertir le String que tu as reçu en Integer. Ensuite tu dois chercher comment afficher ce nombre en binaire.
+Crée un programme (nouveau projet ou exécutable) qui prend en argument une chaîne de caractères, la convertit en Integer et affiche ce nombre en binaire.
 
 ### Exercice ConvertisDansTousLesSens
 
-Crée un programme qui teste différentes conversions de type et affiche les résultats.
-
-- convertis un int en float
-- convertis un double en int. Qu'est-ce qui se passe après la virgule ?
-- convertis une String en int. Qu'est-ce qui se passe s'il y a autre chose que des chiffres ?
-- convertis un int en String
-- convertis un float en double
+Crée un programme qui teste différentes conversions de type et affiche les résultats :
+- convertit un Int en Float
+- convertit un Double en Int (qu'est-ce qui se passe après la virgule?)
+- convertit une String en Int (qu'est-ce qui se passe s'il y a autre chose que des chiffres?)
+- convertit un Int en String
+- convertit un Float en Double
 - etc.
+
+### Exercice Web
+
+Crée un programme qui prend en argument une adresse (URL) d’un site web et affiche son contenu dans la console.  
+Pour faire cela, tu peux utiliser une librairie externe (par exemple la librairie [jsoup](https://jsoup.org/)) ou bien la librairie standard.
 
 :::
