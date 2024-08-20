@@ -62,7 +62,7 @@ Pour l'installation à la maison:
 | [2.1 →](cours/imperatif)          | Impératif                                  | 10%                               |
 | [2.2 →](cours/imperatif)          | Impératif                                  | 20%                               |
 | [3.1 →](cours/std-lib)            | Librairie standard / Collections           | 40%                               |
-| [3.2 →](cours/librairies)         | Librairies tierces                         | 60%                               |
+| [3.2 →](cours/librairies-tierces)         | Librairies tierces                         | 60%                               |
 | [4.1 →](cours/structure)          | Structurer son code                        | 80%                               |
 | [4.2 →](cours/integration-1)      | Intégration                                | 100% remise                       |
 | [5.1 →](cours/formatif-intra)     | Formatif                                   | --                                |
