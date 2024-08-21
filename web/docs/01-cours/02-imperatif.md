@@ -63,11 +63,10 @@ Certaines syntaxes sont pareilles en C# et en Kotlin, alors que d'autres sont di
 
 ### Exercice de compréhension sur les types
 
-Crée un nouveau projet **Types**.
+Crée un nouveau projet **Types**.  
 
-Etant donné le code suivant, et sans rouler de code ni utiliser l'IDE, détermine le type de chaque variable.  
-Consigne tes réponses dans un fichier **types.md** à la racine de ton projet **Types**.
-
+À la racine du projet, crée un simple fichier **types.md** et copies-y le code ci-dessous.  
+À la fin de chaque ligne, écris le type de valeur qui sera contenue dans la variable créée, selon toi.
 ```kotlin
 val a = 1                                   // type est            
 val aa = 1L                                 // type est
@@ -75,14 +74,12 @@ val aaa = a * 25 + aa * 100                 // type est
 val b = 1.0                                 // type est 
 val c = "1"                                 // type est 
 val d = true                                // type est
-val laChose = a +  b + c                    // type est
-val lautreChose = b + c                     // type est
+val laChose = c + b                         // type est
 val k = listOf("1", "2", "3")               // type est
 val l = mutableListOf(true, false, true)    // type est
 ```
 
-Dans le *main*, copie et exécute ce code en mode débogage.  
-Prends des screenshots de l'écran du débogueur qui te permettent de déterminer le type de chaque **val**.
+Copie maintenant le code dans le *main* de **Main.kt** et fais ta souris survoler chaque variable pour voir le type de valeur qu'elle contiendra.
 
 Des surprises?
 
