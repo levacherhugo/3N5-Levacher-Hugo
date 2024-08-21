@@ -58,14 +58,14 @@ hide_table_of_contents: true
 
 :::note Exercices
 
-Le but des exercices est de découvrir Kotlin par la pratique.  
+Le but des exercices est de découvrir Kotlin par la pratique.\
 Certaines syntaxes sont pareilles en C# et en Kotlin, alors que d'autres sont différentes. À toi de trouver lesquelles.
 
 ### Exercice de compréhension sur les types
 
-Crée un nouveau projet **Types**.  
+Crée un nouveau projet **Types**.
 
-À la racine du projet, crée un simple fichier **types.md** et copies-y le code ci-dessous.  
+À la racine du projet, crée un simple fichier **types.md** et copies-y le code ci-dessous.\
 À la fin de chaque ligne, écris le type de valeur qui sera contenue dans la variable créée, selon toi.
 ```kotlin
 val a = 1                                   // type est            
@@ -85,12 +85,12 @@ Des surprises?
 
 ### Exercice de compréhension sur val / var
 
-**val** et **var** sont des mots clés très similaires en lecture rapide. Pourtant, ils sont très différents.  
+**val** et **var** sont des mots clés très similaires en lecture rapide. Pourtant, ils sont très différents.\
 Dans un fichier **valvar.md** à la racine de ton projet **Types**, explique en tes mots la différence entre les deux.
 
 ### Exercice EclateTaString
 
-Crée un nouveau projet **EclateTaString**, ou bien dans un projet existant un nouveau fichier exécutable (avec une fonction *main*) **EclateTaString.kt**.  
+Crée un nouveau projet **EclateTaString**, ou bien, dans un projet existant, crée un nouveau fichier exécutable **EclateTaString.kt** (avec une fonction *main*).\
 Ce programme doit prendre en argument de ligne de commande (paramètre de la méthode main) une chaîne de caractères et afficher chaque caractère de la chaîne individuellement sur une ligne.
 
 ### Exercice Pyramide
@@ -115,7 +115,7 @@ fun creeTableauAleatoire(n: Int): Array<Int> {
     // ton code ici
 }
 ```
-- Calcule la somme, la moyenne, le min et le max d'un tableau d'entiers et affiche-les dans la console.
+- Définis une autre fonction qui calcule la somme, la moyenne, le min et le max d'un tableau d'entiers et les affiche dans la console.
 
 Il t'est fortement recommandé ici de définir des fonctions et de les appeler dans le *main*.
 
@@ -123,7 +123,7 @@ Liens pour des ressources :
 - [Manipulation de tableaux en Kotlin](https://kotlinlang.org/docs/arrays.html#create-arrays)
 - [Classe Random pour les tirages aléatoires](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.random/-random/)
 
-**Astuce** : pour trouver la documentation d’une classe, on google `kotlin class nomdelaclasse`, par exemple ici `kotlin class Random`
+**Astuce** : pour trouver la documentation d’une classe, on google `kotlin class nomdelaclasse`, par exemple ici `kotlin class Random`.
 
 ### Exercice BinariseTonEntier
 
@@ -141,7 +141,7 @@ Crée un programme qui teste différentes conversions de type et affiche les ré
 
 ### Exercice Web
 
-Crée un programme qui prend en argument une adresse (URL) d’un site web et affiche son contenu dans la console.  
+Crée un programme qui prend en argument une adresse (URL) d’un site web et affiche son contenu dans la console.\
 Pour faire cela, tu peux utiliser une librairie externe (par exemple la librairie [jsoup](https://jsoup.org/)) ou bien la librairie standard.
 
 :::

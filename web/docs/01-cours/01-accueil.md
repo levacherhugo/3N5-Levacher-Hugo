@@ -193,7 +193,7 @@ Dans le main, copie un des exemples que tu trouves sur la page de JSOUP [https:/
 - les exemples sont en Java
 - tu peux essayer de les traduire en Kotlin
 - tu peux demander à ChatGPT de traduire l'exemple en Kotlin
-- tu peux aussi copier le code de l'exemple en Java et le coller dans un fichier **.kt** dans Intellij, il te proposera de traduire pour toi
+- tu peux aussi copier le code de l'exemple en Java et le coller dans un fichier **.kt** dans IntelliJ, il te proposera de traduire pour toi
 
 Démontre la bonne exécution de ton programme.
 
