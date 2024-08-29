@@ -5,6 +5,7 @@ fun main(args: Array<String>){
 }
 
 fun unUn(source:String):String{
+    if(source.length==1) return source+source
     var previous:Char?=null
     var count:Int=1;
     var newString:String=""
