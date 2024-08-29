@@ -5,28 +5,17 @@ fun main(args: Array<String>){
 }
 
 fun unUn(source:String):String{
-    if(source.length==1) return source+source
-    var previous:Char?=null
     var count:Int=1;
     var newString:String=""
-    for (i:Int in source.indices){
-        val c:Char=source[i]
-        if(previous==null){
-            previous=c
+    for (i:Int in 1..source.length-1){
+        if(source[i]==source[i-1]){
+            count++
         }
         else{
-            if(c==previous){
-                count++
-            }
-            else{
-                newString+=count.toString()+previous.toString()
-                previous=c
-                count=1
-            }
-            if(i==source.length-1){
-                newString+=count.toString()+previous.toString()
-            }
+            newString+=count.toString()+source[i-1]
+            count=1
         }
     }
+    newString+=count.toString()+source.last()
     return newString
 }
