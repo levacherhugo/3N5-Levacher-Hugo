@@ -10,7 +10,9 @@ fun main() {
  * (1 point) Affiche dans la console le contenu du fichier message.txt qui se trouve dans le projet de départ.
  */
 fun lire() {
-
+    val fichier:File = File("message.txt")
+    val texte:String=fichier.readText()
+    println(texte)
 }
 
 /**
@@ -22,5 +24,17 @@ fun lire() {
  * Si tout s'est bien passé, on retourne la valeur 1.
  */
 fun ecrire(args: Array<String>): Int {
-    return 1
+    if(args.size!=2){
+        println("Besoin d'exactement 2 paramètres")
+        return -1
+    }
+    try {
+        val fichier:File=File(args[0])
+        fichier.writeText(args[1])
+        return 1
+    } catch (e:Exception){
+        println("Erreur imprévue")
+        return -1
+    }
+
 }

@@ -38,6 +38,14 @@ fun main() {
  *     <div>blanquette ?</div>
  * </body>
  */
-fun jsoup(mots: List<String>): Document? {
-    return null
+fun jsoup(mots: List<String>): Document {
+    val document:Document = Jsoup.connect("https://info.cegepmontpetit.ca/3N5-Prog3/intraA24-2.html").get()
+    val body: Element? = document.selectFirst("body")
+    var divs:String=""
+    for(mot in mots){
+        divs+="<div>$mot</div>\n"
+    }
+    body!!.html(divs)
+    println(document)
+    return document
 }
