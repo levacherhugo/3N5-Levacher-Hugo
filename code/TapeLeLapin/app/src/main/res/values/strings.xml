@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TapeLeLapin</string>
+    <string name="tape_le_lapin">Tape le lapin!</string>
+    <string name="tops">Tops!</string>
+    <string name="flops">Flops!</string>
+    <string name="lapin">Lapin</string>
+</resources>
