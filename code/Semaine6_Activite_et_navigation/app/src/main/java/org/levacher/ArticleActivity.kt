@@ -15,7 +15,12 @@ class ArticleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityArticleBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        title = "Article"
+        if(intent.hasExtra("numArticle")){
+            title = "Article #${intent.getStringExtra("numArticle")}"
+        }else{
+            title = "Article"
+        }
+
         binding.btnContact.setOnClickListener {
             val intent = Intent(this, ContactActivity::class.java)
             startActivity(intent)

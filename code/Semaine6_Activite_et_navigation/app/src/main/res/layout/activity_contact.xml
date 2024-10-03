@@ -8,6 +8,19 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ton nom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnAccueil"

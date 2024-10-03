@@ -18,6 +18,7 @@ class ContactActivity : AppCompatActivity() {
         title = "Contact"
         binding.btnAccueil.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("Nom", binding.nameinput.text.toString())
             startActivity(intent)
         }
     }

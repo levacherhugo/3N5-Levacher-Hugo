@@ -3,4 +3,5 @@
     <string name="article">Article</string>
     <string name="contact">Contact</string>
     <string name="accueil">accueil</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper velit interdum varius faucibus. Vestibulum vitae turpis eget odio feugiat scelerisque quis at odio. Nam in luctus justo. Vestibulum venenatis est eget odio blandit sodales. Mauris venenatis ex sed commodo tempor. Aenean tincidunt sapien ac felis scelerisque, at porttitor libero tincidunt. Nullam eu augue sollicitudin, fermentum ante ut, efficitur quam.</string>
 </resources>
