@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ContactActivity::class.java)
             startActivity(intent)
         }
+        binding.btnTelephone.setOnClickListener {
+            val intent = Intent(this, TelephoneActivity::class.java)
+            startActivity(intent)
+        }
         binding.numberpicker.setMinValue(0)
         binding.numberpicker.setMaxValue(10)
     }
