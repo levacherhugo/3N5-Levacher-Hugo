@@ -8,6 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import org.levacher.adapters.MonAdapter
 import org.levacher.databinding.ActivityMainBinding
+import org.levacher.models.Album
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -31,27 +32,27 @@ class MainActivity : AppCompatActivity() {
         )
     }
     private fun fillRecycler() {
-        val items: MutableList<String> = mutableListOf(
-            "Thriller",
-            "The Dark Side of the Moon",
-            "The Beatles",
-            "Back in Black",
-            "Rumours",
-            "The Bodyguard",
-            "Hotel California",
-            "Bad",
-            "1",
-            "Saturday Night Fever",
-            "Abbey Road",
-            "Led Zeppelin IV",
-            "Jagged Little Pill",
-            "The Wall",
-            "Bridge Over Troubled Water",
-            "Born in the U.S.A.",
-            "Come On Over",
-            "21",
-            "Dangerous",
-            "Bellybutton"
+        val items: MutableList<Album> = mutableListOf(
+            Album(1, "Thriller", "Michael Jackson"),
+            Album(2, "The Dark Side of the Moon", "Pink Floyd"),
+            Album(3, "The Beatles (White Album)", "The Beatles"),
+            Album(4, "Back in Black", "AC/DC"),
+            Album(5, "Rumours", "Fleetwood Mac"),
+            Album(6, "The Bodyguard (Soundtrack)", "Whitney Houston"),
+            Album(7, "Hotel California", "Eagles"),
+            Album(8, "Bad", "Michael Jackson"),
+            Album(9, "1", "The Beatles"),
+            Album(10, "Saturday Night Fever (Soundtrack)", "Various Artists"),
+            Album(11, "Abbey Road", "The Beatles"),
+            Album(12, "Led Zeppelin IV", "Led Zeppelin"),
+            Album(13, "Jagged Little Pill", "Alanis Morissette"),
+            Album(14, "The Wall", "Pink Floyd"),
+            Album(15, "Bridge Over Troubled Water", "Simon & Garfunkel"),
+            Album(16, "Born in the U.S.A.", "Bruce Springsteen"),
+            Album(17, "Come On Over", "Shania Twain"),
+            Album(18, "21", "Adele"),
+            Album(19, "Dangerous", "Michael Jackson"),
+            Album(20, "Bellybutton", "Jellyfish")
         )
         adapter.submitList(items) // Pour changer le contenu de la liste, utiliser submitList de l'adapteur
     }

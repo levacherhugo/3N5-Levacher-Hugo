@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:layout_height="150dp"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/AlbumElement"
+        android:id="@+id/AlbumTitle"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Un Album"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+    />
+    <TextView
+        android:id="@+id/AlbumArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Artiste"
+        android:textSize="18sp"
+    />
 </LinearLayout>
