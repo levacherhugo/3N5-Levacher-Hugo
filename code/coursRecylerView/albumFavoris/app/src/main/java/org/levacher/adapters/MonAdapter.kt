@@ -1,10 +1,12 @@
 package org.levacher.adapters
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import org.levacher.DetailActivity
 import org.levacher.databinding.MonItemBinding
 import org.levacher.models.Album
 
@@ -14,6 +16,19 @@ class MonAdapter : ListAdapter<Album, MonAdapter.MonItemViewHolder>(MonItemDiffC
         fun bind(album: Album) {
             binding.AlbumTitle.text = album.name // On affiche l'élément dans le TextView
             binding.AlbumArtist.text = album.artistName // On affiche l'élément dans le TextView
+
+            binding.itemLayout.setOnClickListener{
+                val intent:Intent = Intent(binding.root.context, DetailActivity::class.java)
+                intent.putExtra("ALBUM_NAME", album.name)
+                intent.putExtra("ARTIST_NAME", album.artistName)
+                binding.root.context.startActivity(intent)
+            }
+
+            binding.btnDelete.setOnClickListener{
+                val liste = currentList.toMutableList()
+                liste.remove(album)
+                submitList(liste)
+            }
         }
     }
 
