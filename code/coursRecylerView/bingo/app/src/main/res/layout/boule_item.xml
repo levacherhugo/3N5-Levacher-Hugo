@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bouleLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_tirage"
+            android:text="Tirage #X"
+            android:textSize="35sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/char_colonne"
+            android:textSize="35sp"
+            android:text="X"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numero_tire"
+        android:textSize="35sp"
+        android:text="Numéro tiré : XX"/>
+
+</LinearLayout>
