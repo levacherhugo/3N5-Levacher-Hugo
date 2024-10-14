@@ -29,9 +29,7 @@ class MonAdapter : ListAdapter<Album, MonAdapter.MonItemViewHolder>(MonItemDiffC
             }
 
             binding.btnDelete.setOnClickListener{
-                val liste = currentList.toMutableList()
-                liste.remove(album)
-                submitList(liste)
+                removeItem(layoutPosition)
             }
         }
     }
@@ -43,6 +41,11 @@ class MonAdapter : ListAdapter<Album, MonAdapter.MonItemViewHolder>(MonItemDiffC
     override fun onBindViewHolder(holder: MonItemViewHolder, position: Int) {
         val item: Album = getItem(position)
         holder.bind(item)
+    }
+    fun removeItem(position: Int) {
+        val liste = currentList.toMutableList()
+        liste.removeAt(position)
+        submitList(liste)
     }
 }
 

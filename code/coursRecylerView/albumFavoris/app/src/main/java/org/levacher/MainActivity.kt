@@ -3,6 +3,8 @@ package org.levacher
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.RecyclerView
 import org.levacher.adapters.MonAdapter
 import org.levacher.databinding.ActivityMainBinding
 import org.levacher.models.Album
@@ -27,6 +29,22 @@ class MainActivity : AppCompatActivity() {
                 binding.rvMonAdapter.context, DividerItemDecoration.VERTICAL
             )
         )
+
+        val itemTouchHelper = ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT) {
+            override fun onMove(
+                recyclerView: RecyclerView,
+                viewHolder: RecyclerView.ViewHolder,
+                target: RecyclerView.ViewHolder
+            ): Boolean {
+                return false // We don't want to support dragging
+            }
+
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+                val position = viewHolder.adapterPosition
+                adapter.removeItem(position) // Remove the item from the adapter
+            }
+        })
+        itemTouchHelper.attachToRecyclerView(binding.rvMonAdapter)
     }
     private fun fillRecycler() {
         val items: MutableList<Album> = mutableListOf(
