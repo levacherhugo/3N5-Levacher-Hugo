@@ -3,32 +3,46 @@
     android:layout_width="match_parent"
     android:layout_height="150dp"
     android:focusable="true"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="16dp"
     android:clickable="true"
     android:id="@+id/itemLayout">
 
-    <TextView
-        android:id="@+id/AlbumTitle"
+    <ImageView
+        android:id="@+id/AlbumCover"
+        android:layout_width="118dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="visible"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Un Album"
-        android:textSize="24sp"
-    />
-    <TextView
-        android:id="@+id/AlbumArtist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Artiste"
-        android:textSize="18sp"
-    />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Supprimer"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="end"
-        android:id="@+id/btn_delete"/>
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:clickable="true"
+        >
+        <TextView
+            android:id="@+id/AlbumTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Un Album"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/AlbumArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Artiste"
+            android:textSize="16sp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer"
+            android:layout_gravity="end"
+            android:id="@+id/btn_delete"/>
+    </LinearLayout>
 </LinearLayout>

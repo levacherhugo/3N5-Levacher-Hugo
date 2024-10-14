@@ -30,26 +30,26 @@ class MainActivity : AppCompatActivity() {
     }
     private fun fillRecycler() {
         val items: MutableList<Album> = mutableListOf(
-            Album(1, "Thriller", "Michael Jackson"),
-            Album(2, "The Dark Side of the Moon", "Pink Floyd"),
-            Album(3, "The Beatles (White Album)", "The Beatles"),
-            Album(4, "Back in Black", "AC/DC"),
-            Album(5, "Rumours", "Fleetwood Mac"),
-            Album(6, "The Bodyguard (Soundtrack)", "Whitney Houston"),
-            Album(7, "Hotel California", "Eagles"),
-            Album(8, "Bad", "Michael Jackson"),
-            Album(9, "1", "The Beatles"),
-            Album(10, "Saturday Night Fever (Soundtrack)", "Various Artists"),
-            Album(11, "Abbey Road", "The Beatles"),
-            Album(12, "Led Zeppelin IV", "Led Zeppelin"),
-            Album(13, "Jagged Little Pill", "Alanis Morissette"),
-            Album(14, "The Wall", "Pink Floyd"),
-            Album(15, "Bridge Over Troubled Water", "Simon & Garfunkel"),
-            Album(16, "Born in the U.S.A.", "Bruce Springsteen"),
-            Album(17, "Come On Over", "Shania Twain"),
-            Album(18, "21", "Adele"),
-            Album(19, "Dangerous", "Michael Jackson"),
-            Album(20, "Bellybutton", "Jellyfish")
+            Album(1, "Thriller", "Michael Jackson", "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png"),
+            Album(2, "The Dark Side of the Moon", "Pink Floyd","https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png"),
+            Album(3, "The Beatles (White Album)", "The Beatles","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(4, "Back in Black", "AC/DC","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(5, "Rumours", "Fleetwood Mac","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(6, "The Bodyguard (Soundtrack)", "Whitney Houston","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(7, "Hotel California", "Eagles","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(8, "Bad", "Michael Jackson","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(9, "1", "The Beatles","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(10, "Saturday Night Fever (Soundtrack)", "Various Artists","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(11, "Abbey Road", "The Beatles","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(12, "Led Zeppelin IV", "Led Zeppelin","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(13, "Jagged Little Pill", "Alanis Morissette","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(14, "The Wall", "Pink Floyd","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(15, "Bridge Over Troubled Water", "Simon & Garfunkel","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(16, "Born in the U.S.A.", "Bruce Springsteen","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(17, "Come On Over", "Shania Twain","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(18, "21", "Adele","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(19, "Dangerous", "Michael Jackson","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"),
+            Album(20, "Bellybutton", "Jellyfish","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140")
         )
         adapter.submitList(items) // Pour changer le contenu de la liste, utiliser submitList de l'adapteur
     }

@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import org.levacher.DetailActivity
 import org.levacher.databinding.MonItemBinding
 import org.levacher.models.Album
@@ -17,10 +18,13 @@ class MonAdapter : ListAdapter<Album, MonAdapter.MonItemViewHolder>(MonItemDiffC
             binding.AlbumTitle.text = album.name // On affiche l'élément dans le TextView
             binding.AlbumArtist.text = album.artistName // On affiche l'élément dans le TextView
 
+            Picasso.get().load(album.coverUrl).into(binding.AlbumCover)
+
             binding.itemLayout.setOnClickListener{
                 val intent:Intent = Intent(binding.root.context, DetailActivity::class.java)
                 intent.putExtra("ALBUM_NAME", album.name)
                 intent.putExtra("ARTIST_NAME", album.artistName)
+                intent.putExtra("ALBUM_COVER", album.coverUrl)
                 binding.root.context.startActivity(intent)
             }
 
@@ -48,6 +52,6 @@ object MonItemDiffCallback : DiffUtil.ItemCallback<Album>() {
     }
 
     override fun areContentsTheSame(oldItem: Album, newItem: Album): Boolean {
-        return oldItem.id == newItem.id && oldItem.name == newItem.name && oldItem.artistName == newItem.artistName
+        return oldItem.id == newItem.id && oldItem.name == newItem.name && oldItem.artistName == newItem.artistName && oldItem.coverUrl == newItem.coverUrl
     }
 }
