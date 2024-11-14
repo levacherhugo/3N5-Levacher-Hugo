@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/accueil_item"
+        android:checkable="true"
+        android:icon="@drawable/baseline_circle_24"
+        android:title="Accueil" />
+    <item
+        android:id="@+id/profile_item"
+        android:checkable="true"
+        android:icon="@drawable/baseline_circle_24"
+        android:title="Profile" />
+    <item
+        android:id="@+id/deconnection_item"
+        android:checkable="true"
+        android:icon="@drawable/baseline_circle_24"
+        android:title="Deconnection" />
+</menu>
