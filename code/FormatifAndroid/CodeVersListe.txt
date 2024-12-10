@@ -1,0 +1,7 @@
+var liste = mutableListOf<String>("x", "y", "z")
+var liste2 = mutableListOf<String>("a", "bcd", "e")
+for (i in 1..2) {
+  liste2.addAll(liste)
+}
+
+résultat: ["a", "bcd", "e","x", "y", "z", "x", "y", "z"]
